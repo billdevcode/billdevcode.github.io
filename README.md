@@ -1,1 +1,1 @@
-## https://billdevcode.github.io/blog/git.html 
+## https://billdevcode.github.io/
