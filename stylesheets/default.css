@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar li {
+  float: right;
+}
+
+.navbar a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: white;
+  padding: 14px 16px;
+}
+
+.navbar a:hover {
+  background-color: #111;
+}
+
+h1 {
+  text-align: center;
+  color: #00ffd7;
+  font-size: 9em;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin-top: 170px;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.8);
+  animation: change-color 5s ease-in-out 2s infinite alternate;
+  -webkit-animation: change-color 5s ease-in-out 2s infinite alternate;
+    -moz-animation: change-color 5s ease-in-out 2s infinite alternate;
+}
+
+@-webkit-keyframes change-color {
+  from {
+    color: #00ffd7;
+  }
+  to {
+    color: black;
+    text-shadow: 4px 4px 2px rgba(0, 255, 215, 0.8)
+  }
+}
+
+@keyframes change-color {
+  from {
+    color: #00ffd7;
+  }
+  to {
+    color: black;
+    text-shadow: 4px 4px 2px rgba(0, 255, 215, 0.8)
+  }
+}
+
+.home {
+  background-image: url("http://data.freehdw.com/coding-illusion-cube.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 1500px;
+  height: 550px;
+}
+
+.about-me {
+  height: 550px;
+}
+
+h4 {
+  font-size: 2.5em;
+  margin-top: 20px;
+  color: #0000cc;
+}
+
+.about-left {
+  float: left;
+  max-width: 300px;
+  text-align: center;
+}
+
+.about-left .contact-me-h4 {
+  margin-left: 50px;
+  margin-top: 100px;
+}
+
+.about-left ul {
+  list-style-type: none;
+}
+
+.about-left .fa {
+  font-size: 60px;
+  color: black;
+}
+
+.about-left .fa:hover {
+  color: blue;
+}
+
+.about-left a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.about-right {
+  border-left: 1px solid black;
+  max-width: 1000px;
+  text-align: center;
+  float: right;
+  margin-top: 30px;
+}
+
+.about-right img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-top: -50px;
+}
+
+.about-right p {
+  text-align: left;
+  font-size: 18px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.first-p {
+  margin-top: 30px;
+}
+
+.projects {
+  clear: both;
+  text-align: center;
+  height: 550px;
+  max-width: 1500;
+  background-color: #c0c0c0;
+}
+
+h2 {
+  font-size: 4em;
+  color: #0000cc;
+  padding-top: 30px;
+}
+
+.projects img {
+  margin: 50px;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.projects img:hover {
+  opacity: 1;
+}
+
+footer p {
+  margin-left: 10px;
+  color: black;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}

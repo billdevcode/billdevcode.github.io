@@ -2,56 +2,83 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Bill's Website</title>
+  <meta charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <title>Bill's Website</title>
 </head>
 
 <body>
-<header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#about-me-page">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="blog/index.html" target="_blank">My Blog</a>
-        </nav>
-</header>
-<section id="home">
-        <h1>Welcome!</h1>
-</section>
 
-    <section id="about-me-page">
-        <h2>About Me</h2>
-        <section id="about-me-left">
-            <h4>Contact Me</h4>
-            <ul>
-                <li><a href="https://github.com/billdevcode" target="_blank">Github</a></li>
-            </ul>
-        </section>
+  <nav>
+    <ul class="navbar">
+      <li class="navbar"><a href="blog/index.html" target="_blank">Blog</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li> <a href="#about">About</a></li>
+    </ul>
+  </nav>
 
-        <section id="about-me-right">
-            <h4>Bill Deng</h4>
-            <img src="#" alt="Picture of Bill">
+  <div class="home">
+    <section>
+      <h1>Welcome!</h1>
+    </section>
+  </div>
+
+  <div id="about" class="about-me">
+    <section id="about-me-left">
+      <div class="about-left about-me">
+        <h4 class="contact-me-h4">Contact Me</h4>
+        <ul>
+          <li>
             <p>
-                Hello I'm Bill and I am attending Dev Bootcamp's 19-weeks Full-Stack Web Developer program. During the 19-weeks, I will have an opportunity to collaborate with highly motivated and energetic people just like myself. It's going to be a life-changing experience and I'm looking forward to it.
+              billyd2013@gmail.com
             </p>
-            <p>
-                This site is a work-in-progress and will serve as a showcase for my weekly blogs and projects. I will be adding more and more features each week as the program moves forward.
-            </p>
-        </section>
+            <br>
+          </li>
+
+          <li><a href="https://github.com/billdevcode" target="_blank"><i class="fa fa-github"></i><br>Github</a></li>
+
+          <li><br><a href="https://www.linkedin.com/in/dengbilly" target="_blank"><i class="fa fa-linkedin-square"></i><br>LinkedIn</a></li>
+        </ul>
+      </div>
     </section>
 
-    <section id="projects">
-        <h3>My Projects</h3>
-        <a href="#" target="_blank"><img src="#" alt="#"><span>Project 1</span></a>
-        <a href="#" target="_blank"><img src="#" alt="#"><span>Project 2</span></a>
-        <a href="#" target="_blank"><img src="#" alt="#"><span>Project 3</span></a>
-    </section>
-
-    <footer>
-        <p>
-            Built with HTML and coffee
+    <section id="about-me-right">
+      <div class="about-right about-me">
+        <h4>Bill Deng</h4>
+        <img src="imgs/bill-picture.jpg" alt="Picture of Bill">
+        <p class="first-p">
+          Hello my name is Bill and I'm attending Dev Bootcamp's 19-weeks Full-Stack Web Developer program. During this 19-weeks, I have an opportunity to collaborate with highly motivated and energetic people just like myself. It's going to be a life-changing
+          experience and I'm looking forward to it.
         </p>
-    </footer>
+        <p>
+          This site is a work-in-progress and will serve as a showcase for my weekly blogs and projects. I will add new features each week while I go through this journey.
+        </p>
+
+      </div>
+    </section>
+  </div>
+
+
+  <div class="projects">
+    <section id="projects">
+      <h2>My Projects</h2>
+
+      <img src="imgs/placeholder.jpg" alt="Placeholder Image">
+      <img src="imgs/placeholder.jpg" alt="Placeholder Image">
+      <img src="imgs/placeholder.jpg" alt="Placeholder Image">
+    </section>
+  </div>
+
+
+  <footer>
+
+    <p>
+      Made with HTML, CSS and coffee &copy; 2016 Bill Deng
+    </p>
+  </footer>
+
 </body>
 
 </html>
