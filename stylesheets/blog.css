@@ -51,10 +51,6 @@ h3 {
   color: cyan;
 }
 
-.buttons-ul .fa:hover {
-  color: blue;
-}
-
 .buttons-ul a {
   text-decoration: none;
   color: black;
