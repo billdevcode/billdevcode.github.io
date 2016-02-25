@@ -64,7 +64,7 @@ h1 {
 }
 
 .home {
-  background-image: url("http://data.freehdw.com/coding-illusion-cube.jpg");
+  background-image: url("../imgs/coding-cube.jpg");
   background-size: cover;
   background-attachment: fixed;
   max-width: 1500px;
@@ -164,8 +164,4 @@ h2 {
 footer p {
   margin-left: 10px;
   color: black;
-}
-
-p {
-  font-family: 'Open Sans', sans-serif;
 }
