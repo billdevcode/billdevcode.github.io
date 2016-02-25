@@ -1,0 +1,118 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+  font-size: 3em;
+  clear: both;
+  text-align: center;
+}
+
+.outer-div {
+  max-width: 1500px;
+}
+
+.inner-left {
+  float: left;
+  width: 10%;
+  text-align: center;
+  position: relative;
+}
+
+.buttons-ul {
+  list-style-type: none;
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+  position: fixed;
+}
+
+.buttons-ul li {
+  margin-bottom: 25px;
+}
+
+.buttons-ul .fa {
+  font-size: 50px;
+}
+
+.fa-bars {
+  color: red;
+}
+
+.fa-home {
+  color: green;
+}
+
+.fa-facebook-official {
+  color: blue;
+}
+
+.fa-twitter-square {
+  color: cyan;
+}
+
+.buttons-ul .fa:hover {
+  color: blue;
+}
+
+.buttons-ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.inner-right {
+  float: right;
+  width: 90%;
+}
+
+.command-line-div {
+  text-align: center;
+}
+
+.command-line {
+  height: 300px;
+  width: 600px;
+}
+
+img {
+  margin-right: 10%;
+}
+
+.github-image-div {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.github-img {
+  height: 250px;
+  max-width: 1000px;
+}
+
+h1,
+h2,
+h4,
+p,
+ol,
+ul,
+footer {
+  margin-right: 10%;
+}
+
+footer {
+  clear: both;
+}
+
+.bottom-buttons {
+  text-align: center;
+  clear: both;
+}
+
+.bottom-buttons a {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+}
+
+footer {
+  margin-left: 10%;
+}
