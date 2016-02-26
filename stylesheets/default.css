@@ -67,7 +67,7 @@ h1 {
   background-image: url("../imgs/coding-cube.jpg");
   background-size: cover;
   background-attachment: fixed;
-  max-width: 1500px;
+  max-width: 100%;
   height: 550px;
 }
 
