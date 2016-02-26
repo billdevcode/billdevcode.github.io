@@ -14,10 +14,10 @@ img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-ul {
-  float: left;
+ol {
+  text-align: left;
+  float: right;
   width: 40%;
-  list-style-type: none;
 }
 
 li {
@@ -27,8 +27,4 @@ li {
 
 a {
   text-decoration: none;
-}
-
-a:hover {
-  color: #0000b2;
 }
