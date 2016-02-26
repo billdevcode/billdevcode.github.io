@@ -4,7 +4,7 @@ body {
 }
 
 .outer-div {
-  max-width: 1500px;
+  max-width: 100%;
 }
 
 .inner-left {
@@ -73,8 +73,7 @@ img {
 h2,
 p,
 ol,
-ul,
-footer {
+ul {
   margin-right: 10%;
 }
 
@@ -90,6 +89,6 @@ footer {
 }
 
 footer {
-  margin-left: 15%;
+
     clear: both;
 }
