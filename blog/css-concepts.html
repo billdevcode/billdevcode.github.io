@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Bill's Technical Blog</title>
+</head>
+
+<body>
+
+    <div class="outer-div">
+        <div class="inner-left">
+            <aside id="sidebar-fixed">
+                <ul class="buttons-ul">
+                    <li><a href="index.html"><i class="fa fa-bars"></i><br>Blog Page</a></li>
+                    <li><a href="../index.html"><i class="fa fa-home"></i><br>Home Page</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"></i><br>Facebook</a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square"></i><br>Twitter</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="inner-right">
+            <main>
+                <section id="main-content">
+                    <h1>Best Practices Using ID and Class Selectors</h1>
+                    <p>
+                        February 25, 2016
+                    </p>
+
+                    <div class="blog-img-div">
+                        <img src="../imgs/css-id-class.jpg" alt="ID vs Class" width="600" height="200">
+                    </div>
+                    <section>
+                        <h2>Using IDs and Classes</h2>
+                        <p>
+                            IDs and classes are selectors used in CSS to target specific HTML elements. By targeting the elements, we can then change them and make them look stylish and fancy. Let's take a look at the buttons on the left as example. The default color was black and the size was much smaller, so I used classes to target all the buttons and made them larger but I also used classes to target each of the buttons individually and changed the color.
+                        </p>
+                        <p>
+                            Here are the steps to using IDs and classes:
+                        </p>
+                        <ul>
+                            <li>IDs
+                                <ol>
+                                    <li>We add <code>id="id-name"</code> to the HTML page, with id-name as an example name</li>
+                                    <li>Let's say we want to add an ID to p element, it'll look like this: <code>&lt;p id="id-name"&gt;</code> (include the quotes)</li>
+                                    <li>Then we target the specific p element by using <code>#id-name</code> on the CSS page</li>
+                                    <li>It will look like this: <code>#id-name { color: blue; }</code></li>
+                                </ol>
+                            </li>
+
+                            <li>Classes
+                                <ol>
+                                    <li>We add <code>class="class-name"</code> to the HTML page, with class-name as an example name</li>
+                                    <li>Let's say we want to add a class to p element, it'll look like this: <code>&lt;p class="class-name"&gt;</code> (include the quotes)</li>
+                                    <li>Then we target the specific p element by using <code>.class-name</code> on the CSS page</li>
+                                    <li>It will look like this: <code>.class-name { color: blue; }</code></li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <p>
+                            Notice we used # (hash tag) to target IDs and . (period) to target classes. <i>So what's the 
+                          difference between using IDs and classes?</i> There are a few rules that differentiates them:
+                        </p>
+
+                        <ul>
+                            <li>ID's are unique
+                                <ul>
+                                    <li>Each element can have only one ID</li>
+                                    <li>Each page can have only one element with that ID</li>
+                                </ul>
+                            </li>
+                            <li>Classes are NOT unique
+                                <ul>
+                                    <li>Each element can have multiple classes</li>
+                                    <li>Each class can be used on multiple elements</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <div class="blog-img-div">
+                        <img src="../imgs/barcode-serialnumber.jpg" alt="Barcode and Serial Number" width="600" height="200">
+                    </div>
+                    <section>
+                        <h2>Barcodes vs Serial Numbers</h2>
+                        <p>
+                            A good analogy I found is comparing barcodes and serial numbers. Let's take your computer for example, it has a barcode and when scanned it will show the computer's price. This same barcode is used for all computers that fit the same type. On the other hand, your computer has a unique serial number which distinguishes it to another computer of the same type. Now if we want to change the price, we could update each individual serial number or just update the one barcode. This is just like ID and classes.
+                        </p>
+                    </section>
+
+                    <h2>How it all Comes Together</h2>
+                    <ul>
+                        <li>IDs and classes are selectors</li>
+                        <li>IDs are unique while classes are not</li>
+                        <li>Elements can have both IDs and classes</li>
+                        <li>Simply adding an ID or class does nothing to the element (needs CSS to target them and style)</li>
+                        <li>Information that is reuseable should be kept in class while information that is unique can be kept in an ID</li>
+                    </ul>
+                    <p>
+                        Since classes can be used again and again for more than one element, most people suggest to use <strong>classes</strong> unless you need to target the element using JavaScript selectors (we'll get to that in future posts) or you want the browser to locate an element and automatically scroll to the element like https://billdevcode.github.io/#about
+                    </p>
+                </section>
+            </main>
+        </div>
+        <div class="bottom-buttons">
+            <a href="git.html"><i class="fa fa-arrow-left"></i> Previous</a>
+            <a href="#">Next <i class="fa fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <footer>
+        <hr>Made from HTML, CSS and coffee &copy; 2016 Bill Deng
+    </footer>
+</body>
+
+</html>
