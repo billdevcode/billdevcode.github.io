@@ -4,6 +4,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .navbar {
   list-style-type: none;
   margin: 0;
