@@ -1,4 +1,4 @@
-@media screen and (max-width: 62.5em) {
+@media screen and (max-width: 930px) {
   .about-left {
     max-width: 100%;
     float: none;
@@ -91,7 +91,7 @@ h1 {
 
 .about-me {
   height: auto;
-  max-width: 100%;
+  max-width: 100%;  
 }
 
 h4 {
@@ -132,7 +132,6 @@ h4 {
 }
 
 .about-right {
-  border-left: 1px solid black;
   max-width: 75%;
   height: auto;
   text-align: center;
