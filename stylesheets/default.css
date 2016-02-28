@@ -10,6 +10,25 @@
   }
 }
 
+@media (min-width: 481px) {
+  
+  .about-left {
+  float: left;
+  max-width: 25%;
+  height: auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+  .about-right {
+  max-width: 75%;
+  height: auto;
+  text-align: center;
+  float: right;
+  margin-top: 30px;
+}
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -106,6 +125,8 @@ h4 {
   color: #0000cc;
 }
 
+/*
+
 .about-left {
   float: left;
   max-width: 25%;
@@ -113,6 +134,8 @@ h4 {
   text-align: center;
   overflow: hidden;
 }
+
+*/
 
 .about-left .contact-me-h4 {
   margin-left: 50px;
@@ -138,6 +161,7 @@ h4 {
   color: black;
 }
 
+/*
 .about-right {
   max-width: 75%;
   height: auto;
@@ -145,6 +169,7 @@ h4 {
   float: right;
   margin-top: 30px;
 }
+*/
 
 .about-right img {
   width: 250px;
