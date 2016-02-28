@@ -1,12 +1,15 @@
 @media (max-width: 480px) {
   .about-left {
-    max-width: 100%;
+    max-width: 350px;
     float: none;
+    text-align: center;
   }
+  
   .about-right {
     max-width: 100%;
     float: none;
     border-left: none;
+    text-align: center;
   }
 }
 
@@ -17,7 +20,6 @@
   max-width: 25%;
   height: auto;
   text-align: center;
-  overflow: hidden;
 }
 
   .about-right {
@@ -180,7 +182,7 @@ h4 {
 
 .about-right p {
   text-align: justify;
-  font-size: 1.2vw;
+  font-size: 1em;
   margin-left: 50px;
   margin-right: 50px;
 }
