@@ -1,6 +1,6 @@
 @media (max-width: 480px) {
   .about-left {
-    max-width: 350px;
+    max-width: 100%;
     float: none;
     text-align: center;
   }
@@ -19,7 +19,7 @@
   float: left;
   max-width: 25%;
   height: auto;
-  text-align: center;
+  text-align: center;  
 }
 
   .about-right {
@@ -116,11 +116,6 @@ h1 {
   background-position: center center;
 }
 
-.about-me {
-  height: auto;
-  max-width: 100%;
-}
-
 h4 {
   font-size: 2em;
   margin-top: 20px;
@@ -146,6 +141,7 @@ h4 {
 
 .about-left ul {
   list-style-type: none;
+  padding: 0;
 }
 
 .about-left .fa {
