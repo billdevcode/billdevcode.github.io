@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .about-left {
     max-width: 100%;
     float: none;
@@ -10,7 +10,7 @@
   }
 }
 
-@media (min-width: 481px) {
+@media (min-width: 601px) {
   
   .about-left {
   max-width: 25%;
@@ -199,4 +199,5 @@ h2 {
 footer p {
   margin-left: 10px;
   color: black;
+  font-size: 0.8em;
 }
