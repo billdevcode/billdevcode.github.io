@@ -18,6 +18,7 @@
 @media (min-width: 481px) {
   img {
       width: 50%;
+        height: 80vh;
   }
   
     h1 {
@@ -39,7 +40,6 @@ body {
 }
 
 img {
-  height: 80vh;
   float: left;
   margin-left: 10px;
   border-radius: 12px;

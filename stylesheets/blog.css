@@ -1,9 +1,4 @@
 @media (max-width: 480px) {
-  img {
-    max-width: 85%;
-    height: auto;  
-  }
-  
   .buttons-ul {
     display: none;
   }
@@ -85,6 +80,8 @@ h1 {
 
 img {
   margin-right: 10%;
+  max-width: 85%;
+    height: auto;
 }
 
 h2,
@@ -95,6 +92,6 @@ ul {
 }
 
 footer {
-
+    font-size: .8em;
     clear: both;
 }
