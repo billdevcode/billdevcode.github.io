@@ -99,7 +99,7 @@ h1 {
   }
 }
 
-.home {
+#home {
   background-image: url("../imgs/coding-cube.jpg");
   background-size: cover;
   background-attachment: fixed;
