@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Bill's Technical Blog: Arrays and Hashes</title>
+</head>
+
+<body>
+
+    <div class="outer-div">
+        <div class="inner-left">
+            <aside id="sidebar-fixed">
+                <ul class="buttons-ul">
+                    <li><a href="index.html"><i class="fa fa-bars"></i><br>Blog Page</a></li>
+                    <li><a href="../index.html"><i class="fa fa-home"></i><br>Home Page</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"></i><br>Facebook</a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square"></i><br>Twitter</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="inner-right">
+            <main>
+
+                <h1>Arrays and Hashes</h1>
+                <p>
+                    March 3, 2016
+                </p>
+
+                <div class="blog-img-div">
+                    <img src="../imgs/ruby.png" alt="Ruby" width="400" height="200">
+                </div>
+                <section>
+
+                    <h2>Arrays</h2>
+                    <p>
+                        Arrays are ordered, number-indexed collections of any object or in short, a list. Arrays are used to store 
+                        things (objects) in an ordered list such as a list of songs, a list of students in a classroom, or a list 
+                        of keystrokes a user clicks. Here are some examples of arrays:
+                    </p>
+                    <ol>
+                        <li>[ ]
+                            <ul>
+                                <li>This is an empty array</li>
+                            </ul>
+                        </li>
+                        <li>[5]</li>
+                        <li>["hello", "world"]
+                            <ul>
+                                <li>This is an array with two objects separated by the comma.
+                                    <code>hello</code> is on index 0 and <code>world</code> is on index 1</li>
+                            </ul>
+                        </li>
+                        <li>["hello", 1, 2, 3, true, false, [address, "san francisco"]]</li>
+                    </ol>
+                    <p>
+                        Arrays are enclosed in the [ ] brackets, separated by the commas and the first index starts with 0 (zero) 
+                        then 1, 2, 3, etc. Arrays are very useful in keeping track of an ordered list of things.
+                        <a href="https://pine.fm/LearnToProgram/chap_07.html" target="_blank">Learn more about Arrays</a>
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Hashes</h2>
+                    <p>
+                        Hashes are dictionary-like collection of unique keys and their values. Hashes are also used to store things 
+                        (objects) similar to arrays but hashes doesn't necessarily have to store things using number-indexes instead 
+                        hashes can use any object (instead of numbers). Here are some examples of hashes:
+                    </p>
+                    <ol>
+                        <li>hash_example[:first_name]
+                            <ul>
+                                <li>We are looking up the value of <code>:first_name</code> in a hash named <code>hash_example</code></li>
+                            </ul>
+                        </li>
+                        <li>options = { font_size: 10, font_family: "Arial" }</li>
+                        <li>grades = { "Jane Doe" => 10, "Jim Doe" => 6 }
+                            <ul>
+                                <li>The hash is named <code>grades</code></li>
+                                <li>The keys are <code>Jane Doe</code> and <code>Jim Doe</code></li>
+                                <li>The values are <code>10</code> and <code>6</code></li>
+                                <li>The <code>=></code> sign is used to declare a hash object. </li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p>
+                        Hashes are enclosed in the { } brackets, also separated by commas. We lookup a value by using it's key. 
+                        Hashes can be used to store just about anything like a birthday list (names and dates), your bank balance 
+                        (names and balance), even the indentities of your favorite superheroes (superhero identity and real 
+                        identity), etc. <a href="https://rubymonk.com/learning/books/1-ruby-primer/chapters/10-hashes-in-ruby/lessons/46-introduction-to-ruby-hashes" target="_blank">
+                            Learn more about Hashes</a>
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Conclusion</h2>
+                    <p>
+                        Arrays and hashes are both useful in the real-world. If you want a simple ordered list that's organized 
+                        in numbers starting from index 0 then an array is what you're looking for. If you want a dictionary-like 
+                        list that you can lookup things and not have to use numbers only then a hash is what you're looking for.
+                    </p>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <hr>Made from HTML, CSS and coffee &copy; 2016 Bill Deng
+    </footer>
+</body>
+
+</html>
