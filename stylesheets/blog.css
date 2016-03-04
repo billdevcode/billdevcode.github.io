@@ -95,3 +95,11 @@ footer {
     font-size: .8em;
     clear: both;
 }
+
+.ruby-code {
+  border:solid gray;
+  border-width:.1em .1em .1em .8em;
+  padding:.2em .6em;
+  color: #ed9d13;
+  background: #202020;
+}
