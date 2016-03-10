@@ -66,6 +66,7 @@ nav {
 }
 
 h1 {
+  font-family: 'Lora', serif;
   text-align: center;
   color: #00ffd7;
   font-size: 12vw;
@@ -111,6 +112,7 @@ h4 {
   font-size: 2em;
   margin-top: 20px;
   color: #0000cc;
+  font-family: 'Lora', serif;
 }
 
 
@@ -182,6 +184,7 @@ h2 {
   font-size: 2.5em;
   color: #0000cc;
   padding-top: 30px;
+  font-family: 'Lora', serif;
 }
 
 .projects img {
@@ -193,6 +196,10 @@ h2 {
 
 .projects img:hover {
   opacity: 1;
+}
+
+footer {
+  clear:  both;
 }
 
 footer p {
