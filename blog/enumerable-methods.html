@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Bill's Technical Blog: Ruby#Enumerable#Map</title>
+</head>
+
+<body>
+
+    <div class="outer-div">
+        <div class="inner-left">
+            <aside id="sidebar-fixed">
+                <ul class="buttons-ul">
+                    <li><a href="index.html"><i class="fa fa-bars"></i><br>Blog Page</a></li>
+                    <li><a href="../index.html"><i class="fa fa-home"></i><br>Home Page</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"></i><br>Facebook</a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square"></i><br>Twitter</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="inner-right">
+            <main>
+                    <h1>Enumerable Method: Map</h1>
+                    <p>
+                        March 10, 2016
+                    </p>
+
+                    <div class="blog-img-div">
+
+                        <img src="imgs/ruby-collect-map.jpg" alt="Ruby Map Method" width="600" height="200">
+                    </div>
+                    <section>
+
+                        <h2>The Map Method</h2>
+                            <p>
+                                The map method is a highly useful Ruby method. 
+                                Let's look at a real life example, you own a store and you have a list of products with their 
+                                prices. One day you decided to double the price of all your products...because it's your store and 
+                                you just felt like it. This is where we use the map method. 
+                            </p>
+                            
+                            <p>
+                                So what does the map method do? Map goes through a provided object, does something to it 
+                                then gives you the results. Some examples of what this looks like:
+                            </p>
+                            
+                            <ul>
+                                <li><code class="ruby-code">
+                                    my_array = [2,4,6,8,100]
+                                    <br>my_array.map { |num| num + 2 }
+                                </code><ul>
+                                <li>In this example, <strong>my_array</strong> is an array (aka an object) and it contains 
+                                5 numbers: <code class="ruby-code">[2,4,6,8,100]</code></li>
+                                <li>We use the map method on it by adding a period after <strong>my_array</strong> followed by <strong>map</strong></li>
+                                <li>Then we add a bracket and a vertical bar, both of which are part of the map method's syntax</li>
+                                <li>Next we see <strong>num</strong> which is just a name I made up as a variable to represent each of the 5 
+                                numbers in <strong>my_array</strong> but you can use something else like <strong>x</strong></li>
+                                <li>After that we see a closing veritical bar</li>
+                                <li>Finally we see <strong>num + 2</strong> which means we are using each of the 5 numbers in 
+                                <strong>my_array</strong> and adding 2 to them and of course we have the closing bracket</li>
+                                <li>If we use the above codes, we'll see an output of <code class="ruby-code">[4, 6, 8, 10, 102]</code></li>
+                            </ul></li></ul>
+                            
+                                <ul>
+                                    <li>Let's take a look at another example:</li>
+                                    <li><code class="ruby-code">
+                                    my_inventory = {
+                                        <br>&nbsp; &nbsp; "pizza" => 2,
+                                        <br>&nbsp; &nbsp; "toy car" => 3,
+                                        <br>&nbsp; &nbsp; "book" => 20,
+                                        <br>&nbsp; &nbsp; "pencil" => 1,
+                                        <br>&nbsp; &nbsp; "TV" => 500,
+                                    <br>&nbsp; }
+                                    <br>&nbsp; my_inventory.map { |item, price| price * 2 }
+                                </code></li><ul>
+                                <li><strong>my_inventory</strong> is a hash (aka an object) and it contains 
+                                5 items along with their prices</li>
+                                <li>We use the map method the same way as the above example except we we use 
+                                <strong>item</strong> instead of <strong>num</strong>, we add an extra variable called 
+                                <strong>price</strong> and we added a comma between them to show these are two variables
+                                <li>After that we see a closing veritical bar</li>
+                                <li>Finally we see <strong>price * 2</strong> which means we are using each of the items in 
+                                <strong>my_inventory</strong> and we are multiplying their price with 2</li>
+                                <li>If we use the above codes, we'll see an output of <code class="ruby-code">[4, 6, 40, 2, 1000]</code></li>
+                            </ul></li></ul>
+                    </section>
+
+                    <section>
+                        <h2>To Map or Map!</h2>
+                            <p>
+                                There are 2 ways to use map, there's the map and there's map! (with exclamation). 
+                                Map will output results with a new object while map! will change and 
+                                output results using the existing object. The terms used to describe this is 
+                                non-destructive (map) and destructive (map!). 
+                            </p>
+                    </section>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <hr>Made from HTML, CSS and coffee &copy; 2016 Bill Deng
+    </footer>
+</body>
+
+</html>
