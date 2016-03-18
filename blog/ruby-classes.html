@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Bill's Technical Blog: Ruby Classes</title>
+</head>
+
+<body>
+
+    <div class="outer-div">
+        <div class="inner-left">
+            <aside id="sidebar-fixed">
+                <ul class="buttons-ul">
+                    <li><a href="index.html"><i class="fa fa-bars"></i><br>Blog Page</a></li>
+                    <li><a href="../index.html"><i class="fa fa-home"></i><br>Home Page</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"></i><br>Facebook</a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square"></i><br>Twitter</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="inner-right">
+            <main>
+                    <h1>Ruby Classes and Instances</h1>
+                    <p>
+                        March 16, 2016
+                    </p>
+
+                    <div class="blog-img-div">
+                        <img src="../imgs/classes-instances.png" alt="Classes and Instances" width="600" height="300">
+                    </div>
+                    <section>
+
+                        <h2>What is a Class? What is an Instance?</h2>
+                            <p>
+                                In this blog post, we'll talk about Ruby classes and instances. Let's take a look at the above 
+                                image. In Ruby, a class is a blueprint from which instances or objects are created. We can see a building 
+                                is a class while the Empire State Building is an instance (object) created from building which makes sense 
+                                because Empire State is a building right? The World Trade Center and Chrysler Building comes from the building 
+                                class too because they are buildings as well.
+                            </p>
+                            <p>
+                                Let's take a look at the dog example. A dog is a class and it creates Lassie, a famous dog and an instance 
+                                of the dog class. If you want to know more about Lassie then check out 
+                                <a href="https://en.wikipedia.org/wiki/Lassie" target="_blank">Wikipedia</a>.
+                                If you happen to have a dog at home, well your dog came from the dog class too. 
+                                If instead you have a cat then it came from the cat class and not dog class.
+                            </p>
+                    
+                    </section>
+
+                    <pre class="ruby-code">
+                                                class Puppy
+                                                    def initialize(name)
+                                                        @name = name 
+                                                    end
+    
+                                                    def wag_tail
+                                                        puts "#{@name} wags his tail!" 
+                                                    end
+    
+                                                    def puppy_dog_eyes
+                                                        puts "#{@name} looks at you with puppy dog eyes" 
+                                                    end
+                                                end
+
+                                                ruby = Puppy.new("Ruby")
+                                                ruby.wag_tail
+                                                ruby.puppy_dog_eyes
+                    </pre>
+                    <section>
+                        <h2>Ruby Class Example</h2>
+                            <p>
+                                The above is an example of how a class looks like in Ruby. We created a class called Puppy and it has 3 methods, 
+                                basically behaviors or actions all instances of the Puppy class can use. Every class comes with an <strong> initialize </strong>
+                                method which allows us to put default values into all new instances of the class. So when we 
+                                make a new Puppy instance, we have to initialize with a name because that's how we defined 
+                                the initialize method using <code class="ruby-code"> def initialize(name)</code>. Let's say we want to 
+                                name our puppy "Ruby" so we would create a variable to save "Ruby" using <code class="ruby-code">ruby = 
+                                Puppy.new("Ruby")</code>
+                            </p>
+                            <p>
+                                Then we save the Puppy's name into an instance variable called <code class="ruby-code">@name</code>. We know 
+                                this is an instance variable because it has the @ character. Instance variables are variables that can be used 
+                                and reused throughout all methods of the class. Next we have the wag_tail method that outputs an action using 
+                                the name we intialized with. We can then call this method using the variable we created using 
+                                <code class="ruby-code">ruby.wag_tail</code> and we can call the last method using 
+                                <code class="ruby-code">ruby.puppy_dog_eyes</code>. Try these codes out on 
+                                <a href="https://repl.it/languages/ruby" target="_blank">repl.it</a> and create more class methods for your 
+                                Puppy. 
+                            </p>
+                            
+                            <p>
+                                Classes and instances are great for organizing and reusing our codes. The methods we created in the Puppy class 
+                                won't be accessible by the Kitten class or vice versa. And by making our Puppy class, we can make many puppy
+                                instances and all of them can use the methods we created in the Puppy class. Learn more about Ruby class 
+                                <a href="https://pine.fm/LearnToProgram/chap_09.html" target="_blank"> here</a>.
+                            </p>
+                    </section>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <hr>Made from HTML, CSS and coffee &copy; 2016 Bill Deng
+    </footer>
+</body>
+
+</html>
