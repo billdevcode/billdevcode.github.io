@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Bill's Technical Blog: Ruby If and JavaScript If</title>
+</head>
+
+<body>
+
+    <div class="outer-div">
+        <div class="inner-left">
+            <aside id="sidebar-fixed">
+                <ul class="buttons-ul">
+                    <li><a href="index.html"><i class="fa fa-bars"></i><br>Blog Page</a></li>
+                    <li><a href="../index.html"><i class="fa fa-home"></i><br>Home Page</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"></i><br>Facebook</a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square"></i><br>Twitter</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="inner-right">
+            <main>
+                    <h1>Ruby and JavaScript: If Statements</h1>
+                    <p>
+                        March 25, 2016
+                    </p>
+
+                    <div class="blog-img-div">
+
+                        <img src="../imgs/if-homer-simpsons.jpg" alt="Homer Simpson" width="350" height="400">
+                    </div>
+                    <section>
+
+                        <h2>What are If statements</h2>
+                            <p>
+                                If statements are widely used in Ruby and JavaScript as conditional statements for control flow. 
+                                If we look at the above image, we see Homer Simpson have 2 actions. The 
+                                first action is to say "mmm.. Keep it coming" and the second action is to say "I can't eat this!!!" 
+                                Which action he takes depend on <code class="ruby-code">if food == 'junk food'</code>, this means if the
+                                food is junk food then he will say "mmm.. Keep it coming" otherwise (else) he'll say "I can't eat this!!!"
+                            </p>
+                            <p>
+                                In the above example, only junk food will trigger Homer's first action, everything else will trigger his 
+                                second action. Also there are only 2 conditions but we could easily have 5, 10 or more conditions 
+                                by adding elsif or else if conditions which we will talk about below. 
+                            </p>
+                    </section>
+
+                    <section>
+                        <h2>See If in Action</h2>
+                            <p>
+                                Overall, the logic behind Ruby If and JavaScript If statements are the same but the syntax has some differences. 
+                                Let's take a look at the code examples:
+                            </p>
+                            <pre class="ruby-code">
+                                
+                    Ruby                                                                JavaScript
+                                        
+        Example 1:  if true                                                 Example 1:  if (true)                                         
+                        puts "this is true!"                                                { console.log("this is true!"); }
+                    end                                                                 
+                                        
+                                        
+        Example 2:  puts "this is true!" if true                            Example 2:  if (true) console.log("this is true!");
+
+
+        Example 3:  if food == "junk food"                                  Example 3:  if (food === 'junk food') 
+                        puts "mmm.. Keep it coming"                                         { console.log("mmm.. Keep it coming"); }
+                    elsif food == "steak"                                               else if (food === "steak")                                    
+                        puts "mm.. ssssssteak"                                              { console.log("mm.. ssssssteak"); }
+                    else                                                                else
+                        puts "I can't eat this!!!"                                          { console.log("I can't eat this!!!"); }
+                    end   
+                                        
+                                    food == "junk food" ? "mmm.. Keep it coming" : "I can't eat this!!!"
+                            </pre>
+                            
+                             <ul>
+                                 Differences:
+                                 <li>
+                                    Ruby does not require parenthesis while JavaScript does: if true vs if (true) 
+                                 </li>
+                                 <li>
+                                     Ruby allows a short one-line way of writing an if statement by putting the result before the if 
+                                     (second example above) while JavaScript does not allow this syntax
+                                 </li>
+                                 <li>
+                                     Ruby uses elsif while JavaScript uses else if
+                                 </li>
+                                 <li>
+                                     Ruby requires the word "end" to close the if statement while JavaScript uses { } brackets but code 
+                                     will pass without the brackets
+                                 </li>
+                             </ul>
+                             
+                             <p>
+                                 The good news is both Ruby and JavaScript can use <code class="ruby-code">
+                                     food == "junk food" ? "mmm.. Keep it coming" : "I can't eat this!!!"</code>. This is the 
+                                     ternary operator which reads: condition ? result if true : result if false. The question 
+                                     mark and colon are required as part of the syntax. Learn more about ternary operators
+                                     <a href="https://en.wikipedia.org/wiki/%3F:" target="_blank"> here</a>.
+                             </p>
+                            
+                    </section>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <hr>Made from HTML, CSS and coffee &copy; 2016 Bill Deng
+    </footer>
+</body>
+
+</html>
