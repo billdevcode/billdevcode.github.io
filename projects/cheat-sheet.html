@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="cheat-sheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Ruby Cheat Sheet</title>
+</head>
+
+<body>
+
+    <div class="img-div">
+        <img src="ruby-logo.png" alt="Ruby Logo">
+    </div>
+    
+    <h1>Ruby Cheatsheet: Hashes, Arrays, Strings and Integers</h1>
+
+    <div class="hash-div">
+        <section>
+            <h3>
+          Hash
+        </h3>
+            <pre class="ruby-code">
+         
+Example of hashes: 
+    grades = { "Jane Doe" => 10, "Jim Doe" => 6 }
+    options = { :font_size => 10, :font_family => "Arial" }          
+    options = { font_size: 10, font_family: "Arial" }
+        
+Creating new hashes:  
+    grades = {}
+    grades.default = 0
+    grades = Hash.new
+    grades = Hash.new(0)
+   
+Adding or modifying key/value:
+    grades["Dorothy Doe"] = 9
+    books[:matz]  = "The Ruby Language"
+            
+Accessing hashes:
+    grades["Dorothy Doe"]
+    books[:matz]
+            
+    h = { "a" => 100, "b" => 200 }
+      h["a"]   # 100
+      h["c"]   # nil
+        </pre>
+            <div class="inner-div">
+                <p>
+                    A hash is a dictionary-like collection of unique keys and their values. Also called associative arrays, they are similar to arrays, but where an array uses integers as its index, a hash allows you to use any object type.
+                </p>
+                <p>Some things to know about hashes:</p>
+                <ul>
+                    <li>Hashes use curly brackets { }</li>
+                    <li>We access hash values by using the keys inside [ ] brackets with quotes or colon depending on the key, see examples above</li>
+                    <li>Keys should be unique</li>
+                    <li>If the key doesn't exist then we get nil</li>
+                    <li>We can set a default value with <strong>grades = {} </strong> then <strong> grades.default = 0</strong> or <strong> grades = Hash.new(0)</strong></li>
+                </ul>
+                <p>
+                    Learn more about Ruby hashes and hash methods <a href="http://ruby-doc.org/core-2.2.0/Hash.html" target="_blank"> here</a>.
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="array-div">
+        <section>
+            <h3>
+          Array
+        </h3>
+            <pre class="ruby-code">
+          
+Examples of arrays: 
+    ary = [1, "two", 3.0] #=> [1, "two", 3.0]
+    a = [ 1, 2, [true, [4, "hello"] ] ]
+              
+Creating new arrays: 
+    ary = []
+    ary = Array.new    #=> []
+    Array.new(3, true) #=> [true, true, true]
+              
+Adding or modifying elements:
+    ary[0] = 4
+    ary[1] = "hello world"
+          
+Accessing arrays: 
+    arr = [1, 2, 3, 4, 5, 6]
+      arr[2]    #=> 3
+      arr[100]  #=> nil
+        </pre>
+            <div class="inner-div">
+                <p>
+                    Arrays are ordered, integer-indexed collections of any object. Array indexing starts at 0, as in C or Java. A negative index is assumed to be relative to the end of the array---that is, an index of -1 indicates the last element of the array, -2 is the next to last element in the array, and so on.
+                </p>
+                <p>Some things to know about arrays:</p>
+                <ul>
+                    <li>Arrays use [ ] brackets </li>
+                    <li>We access array elements using indexes like the example <strong> ary[0]</strong>, this means index 0 of array ary</li>
+                    <li>Nested array means an array with sub-array elements, example <strong> [ 1, 2, [true, [4, "hello"] ] ]</strong></li>
+                    <li>Trying to access an array index that doesn't exist will get nil</li>
+                    <li>By using <strong> %w{ David A. Black </strong>, we can get <strong>["David", "A.", "Black"]</strong></li>
+                    <li>We can convert an array into a string by using the <strong> join</strong> method</li>
+                </ul>
+                <p>
+                    Learn more about Ruby arrays and array methods <a href="http://ruby-doc.org/core-2.2.0/Array.html" target="_blank"> here</a>.
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="string-div">
+        <section>
+            <h3>
+          String
+        </h3>
+        </section>
+        <pre class="ruby-code">
+          
+Examples of strings: 
+    my_string = "hello world"
+    my_string = String.new("hello world")
+    "1 2 3 4 5 6, yes this is a super long string!"
+              
+Creating new strings: 
+    'creating a new string within single-quotes'
+    "or create a new string within double-quotes"
+    a = "or assign a string to a variable"
+              
+Adding or modifying strings:
+    a = "hello "
+      a &lt;&lt; "world"   #=> "hello world"
+      a.concat("world")  #=> "hello world"
+          
+Accessing strings:
+    a = "hello there"
+      a[1]   #=> "e"
+      a[2, 3]   #=> "llo"
+      a[2..3]   #=> "ll"
+        </pre>
+        <div class="inner-div">
+            <p>
+                A string is a group of characters that typically make up human readable words or sentences.
+            </p>
+            <p>Some things to know about strings:</p>
+            <ul>
+                <li>Strings go within single or double quotes</li>
+                <li>String interpolation doesn't work with single-quoted strings</li>
+                <li>We can convert a string into a number or array using methods such as <strong> string.to_i </strong> and <strong> split</strong> method</li>
+            </ul>
+            <p>
+                Learn more about Ruby strings and string methods <a href="http://ruby-doc.org/core-2.2.0/String.html" target="_blank"> here</a>.
+            </p>
+        </div>
+    </div>
+
+    <div class="integer-div">
+        <section>
+            <h3>
+          Integer
+        </h3>
+        </section>
+        <pre class="ruby-code">
+          
+Examples of integers: 
+    2016
+    123456
+              
+Creating new integers: 
+    2016
+    a = 2016
+              
+Adding or modifying integers:
+    2016 * 20 + 1
+    a = 123456 * 2 - 10
+    a + 100000
+        </pre>
+        <div class="inner-div">
+            <p>
+                An integer means a whole number (no decimals).
+            </p>
+            <p>Some things to know about integers:</p>
+            <ul>
+                <li>Integers have limited methods but we can change it into a string with <strong> 12345.to_s</strong> and then use string methods</li>
+                <li>You can perform all the basic arthimetic calculations using -, +, * and /</li>
+                <li>A number with decimal is called a float</li>
+            </ul>
+            <p>
+                Learn more about Ruby integers and integer methods <a href="http://ruby-doc.org/core-2.2.0/Integer.html" target="_blank"> here</a>.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <hr>Made from HTML, CSS and coffee &copy; 2016 Bill Deng
+    </footer>
+</body>
+</html>
