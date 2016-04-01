@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Bill's Technical Blog: Test-Driven Development</title>
+</head>
+
+<body>
+
+    <div class="outer-div">
+        <div class="inner-left">
+            <aside id="sidebar-fixed">
+                <ul class="buttons-ul">
+                    <li><a href="index.html"><i class="fa fa-bars"></i><br>Blog Page</a></li>
+                    <li><a href="../index.html"><i class="fa fa-home"></i><br>Home Page</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"></i><br>Facebook</a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square"></i><br>Twitter</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="inner-right">
+            <main>
+                    <h1>Test-Driven Development</h1>
+                    <p>
+                        April 1, 2016
+                    </p>
+
+                    <div class="blog-img-div">
+                        <img src="../imgs/tdd-3-steps.png" alt="TDD 3-Steps" width="500" height="250">
+                    </div>
+                    <section>
+
+                        <h2>What is Test-Driven Development (TDD)?</h2>
+                            <p>
+                                Test-driven development (TDD) is a software development process that uses repetition of tests  
+                                and short development cycles. First, we write an automated test case (initially failing) that 
+                                defines an improvement or new feature, then we produce the minimum codes to pass that test, 
+                                and finally refactor the codes.
+                            </p>
+                            <p>
+                                Based on the book <strong> Test Driven Development: By Example </strong> by <italic> Kent Beck </italic>,
+                                we can break TDD down into 6 steps: 
+                            </p>
+                            <ol>
+                                <li><strong>Add a test: </strong> each new feature begins with writing a test. The developer can write a test 
+                                by understanding the specifications and requirements through use cases and user stories. It makes the developer 
+                                focus on the requirements before writing codes. This is a very important differentiating feature of TDD.</li>
+                                <li><strong>Run all tests and see if the new test fails: </strong> this validates the test is working correctly, 
+                                and the required feature does not already exist. The new test should also fail for the expected reasons. This 
+                                step increases the developer's confidence that the unit is testing correct constraint and passes only in 
+                                intended cases.</li>
+                                <li><strong>Write some code: </strong> this step is to write some code that causes the test to pass. The only 
+                                purpose is to pass the test even if the code written is not perfect or inelegant.</li>
+                                <li><strong>Run tests: </strong> if all test cases pass then it means the new code meets the test requirements. 
+                                If the test do not pass then adjust the code until it passes.</li>
+                                <li><strong>Refactor the code: </strong> clean up the code, remove duplicates, improve readability and 
+                                maintainability. This will be increasingly valuable later in the software lifecycle.</li>
+                                <li><strong>Repeat: </strong> start a new test and make sure the steps are small with as few as 1 to 10 
+                                edits between each run. If new code does not quickly satisfy a new test or other tests fail then it's suggested 
+                                to undo or revert rather than excessive debugging. This is where version control places a big role.</li>
+                            </ol>
+                    </section>
+
+                    <div class="blog-img-div">
+                        <img src="../imgs/tdd-image.png" alt="TDD Image" width="500" height="300">
+                    </div>
+                    <section>
+                        <h2>TDD Benefits and Limitations</h2>
+                      <p>Benefits:</p>
+                           <ul>
+                               <li>By focusing on the test cases first, the developer must imagine how the functionality or feature 
+                               is used by the end-users rather than preconceptions</li>
+                               <li>This drives the design of the program as the developer have to be concerned with the interface before the 
+                               implementation</li>
+                               <li>TDD offers the ability to take small steps when necessary</li>
+                               <li>TDD ensures all written code has been tested at least once</li>
+                               <li>While TDD increases the total amount of code, it helps to limit the number of defects or bugs</li>
+                               <li>Catching and preventing bugs early in the process avoid lengthy debugging later in the project</li>
+                               <li>TDD can lead to more flexible codes because each cycle is written and tested independently and integrated 
+                               together later</li>
+                           </ul>
+                           <p>Limitations:</p>
+                           <ul>
+                               <li>TDD does not perform sufficient testing where full functional tests are required to determine success or 
+                               failure such as user interface, programs that work with databases or programs that depend on specific network 
+                               configurations</li>
+                               <li>Management support is essential, otherwise management may feel time spent writing tests is wasted</li>
+                               <li>Unit tests are typically written by the developer who is also writing the code being tested. If the developer 
+                               misinterprets the requirements then the code and unit tests are both incorrect therefore, the tests will pass 
+                               and give a false sense of corectness</li>
+                               <li>Writing and maintaining an excessive number of tests takes up time</li>
+                           </ul>
+                    </section>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <hr>Made from HTML, CSS and coffee &copy; 2016 Bill Deng
+    </footer>
+</body>
+
+</html>
