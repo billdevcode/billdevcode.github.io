@@ -18,8 +18,11 @@ $(document).ready(function() {
 
         // if no author then author is "Anonymous"
         if (!data.quoteAuthor) {
-          data.quoteAuthor = "Anonymous"
+          data.quoteAuthor = "Anonymous";
         }
+
+        // remove semi-colons because it ends quote
+        data.quoteText = data.quoteText.replace(/;/g, "");
 
         // fade effects
         $('#quote').fadeOut(1000, showQuotes);
@@ -29,8 +32,16 @@ $(document).ready(function() {
         function showQuotes() {
           $('#quote').html('<blockquote><p>' + data.quoteText + '</p><footer>' + data.quoteAuthor + '</footer></blockquote>');
         }
+
+        // shoten tweet to 140 characters
+        let shortenQuote = data.quoteText;
+        if (("Great quote! " + '"' + data.quoteText + '"' + " - " + data.quoteAuthor).length > 140) {
+          let limitQuote = 137 - ("Great quote! " + '"' + '"' + " - " + data.quoteAuthor).length;
+          shortenQuote = data.quoteText.substring(0, limitQuote) + "...";
+        }
+
         // tweet the quote
-        tweet("Great quote! " + '"' + data.quoteText + '"' + " - " + data.quoteAuthor);
+        tweet("Great quote! " + '"' + shortenQuote + '"' + " - " + data.quoteAuthor);
       }
     });
   }
