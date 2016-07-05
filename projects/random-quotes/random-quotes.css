@@ -1,0 +1,50 @@
+body {
+  max-width: 100%;
+  height: 570px;
+  background-size: cover;
+  background-image: url('http://img11.deviantart.net/d12c/i/2011/204/7/f/rain_over_window_by_kurodot-d41dh9d.jpg');
+  background-attachment: fixed;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.home h1 {
+  color: #001f3f;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Indie Flower;
+  text-align: center;
+}
+
+#button {
+  position: absolute;
+  width: 20%;
+  top: 80%;
+  left: 36%;
+  outline: 0;
+  text-decoration: none;
+}
+
+blockquote {
+  color: #ffffff;
+  font-size: 45px;
+  font-family: 'Architects Daughter';
+  padding-top: 20px;
+}
+
+#quote footer {
+  color: #ffffff;
+  font-size: 30px;
+  font-family: 'Architects Daughter';
+  font-style: italic;
+}
+
+.link {
+  position: absolute;
+  top: 80%;
+  left: 57%;
+  width: 100px;
+}
