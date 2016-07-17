@@ -1,95 +1,78 @@
-const urlRecent = "https://fcctop100.herokuapp.com/api/fccusers/top/recent";
-const urlAlltime = "https://fcctop100.herokuapp.com/api/fccusers/top/alltime";
-var alltimeArray = [],
-    recentArray = [];
+var alltimeList, recentList;
 
-const API = React.createClass({
-  getInitialState() {
-    return {
+class LeaderBoard extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
       users: ''
     }
-  },
+  }
 
   componentDidMount() {
-    $.ajax({
-      url: urlRecent,
-      cache: false,
-      dataType: "json",
-      success: function(users) {
-        this.setState({
-          users: users
-        });
-        recentArray = users;
-      }.bind(this),
-      error: function(xhr, status, err) {
-        console.error(this.props.url, status, err.toString());
-      }.bind(this)
-    });
+    const urlRecent = "https://fcctop100.herokuapp.com/api/fccusers/top/recent";
+    const urlAlltime = "https://fcctop100.herokuapp.com/api/fccusers/top/alltime";
 
-    $.ajax({
-      url: urlAlltime,
-      cache: false,
-      dataType: "json",
-      success: function(users) {
-        alltimeArray = users;
-      },
-      error: function(xhr, status, err) {
-        console.error(this.props.url, status, err.toString());
-      }.bind(this)
-    });
-  },
+    $.get(urlRecent, function(users) {
+      this.setState({
+        users: users
+      });
+      recentList = users;
+    }.bind(this));
+
+    $.get(urlAlltime, function(users) {
+      alltimeList = users;
+    }.bind(this));
+  }
 
   render() {
     if (!this.state.users) {
       return (
-        <div>
-        Loading...
+        <div className="loading">
+          Loading...
       </div>
-      )
+      );
     } else {
       return (
-        <div className="board">
+        <div className="table-wrapper">
            <table>
-             <caption>Leaderboard</caption>
-           <tr>
-             <th>#</th>
-             <th>Camper Name</th>
-             <th><a className="sortable" onClick={this.sortByRecent.bind(this)}>Points in recent 30 days</a></th>
-             <th><a className="sortable" onClick={this.sortByAlltime.bind(this)}>All time points</a></th>
-           </tr>
+             <caption>FCC Leaderboard</caption>
+             <tr>
+               <th></th>
+               <th>Profile Image</th>
+               <th>Camper Name</th>
+               <th><a className="sorting" onClick={this.sortByRecent.bind(this)}>Points in recent 30 days</a></th>
+               <th><a className="sorting" onClick={this.sortByAlltime.bind(this)}>All time points</a></th>
+             </tr>
       {this.state.users.map(user => {
                var userLink = `https://www.freecodecamp.com/${user.username}`;
        return (
-         <tr>
-           <td>{this.state.users.indexOf(user)+1}</td>
-           <td><a href={userLink}>
-             <p className="username"><img src={user.img} alt="user image"/><br/>{user.username}</p></a>
-            </td>
-           <td>{user.recent}</td>
-           <td>{user.alltime}</td>
-         </tr>
-
-       )
+             <tr>
+               <td>{this.state.users.indexOf(user)+1}</td>
+           <td><a href={userLink}><img src={user.img} alt="user image"/></a></td>
+               <td><a href={userLink}>
+                 <p className="username">{user.username}</p></a>
+               </td>
+               <td>{user.recent}</td>
+               <td>{user.alltime}</td>
+             </tr>
+       );
       })}
-              </table>
+          </table>
         </div>
       )
     }
-  },
+  }
 
   sortByRecent() {
     this.setState({
-      users: recentArray
+      users: recentList
     });
-  },
+  }
   sortByAlltime() {
     this.setState({
-      users: alltimeArray
+      users: alltimeList
     });
-  },
+  }
+}
 
-})
-
-const mountNode = document.querySelector('#leaderboard');
-
-ReactDOM.render(<API/>, mountNode)
+ReactDOM.render(<LeaderBoard/>, document.querySelector('#leaderboard'))

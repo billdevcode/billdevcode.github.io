@@ -1,66 +1,64 @@
 html {
-  background-color: grey;
-}
+  background-color: #AAAAAA; }
+  html #leaderboard {
+    text-align: center; }
+    html #leaderboard .table-wrapper {
+      overflow-x: auto; }
+    html #leaderboard .loading {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      font-size: 3em;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      font-family: "Poiret One", cursive; }
+    html #leaderboard .sorting {
+      text-decoration: none; }
+      html #leaderboard .sorting:hover {
+        cursor: pointer;
+        text-decoration: underline; }
+    html #leaderboard .username {
+      font-size: 1em;
+      position: relative; }
+    html #leaderboard table {
+      margin: 0 auto;
+      width: 60%; }
+    html #leaderboard a {
+      text-decoration: none; }
+    html #leaderboard img {
+      width: 50px;
+      height: 50px;
+      border-radius: 5px;
+      border: 2px solid #111111;
+      position: relative;
+      top: 3px; }
+    html #leaderboard table,
+    html #leaderboard th,
+    html #leaderboard td,
+    html #leaderboard caption {
+      border: 1px solid lightgray;
+      border-collapse: collapse;
+      font-weight: bold; }
+    html #leaderboard th {
+      font-size: 1.3em;
+      padding: 15px;
+      color: #001f3f;
+      font-family: "Poiret One", cursive; }
+    html #leaderboard td {
+      font-size: 1.1em;
+      font-family: "Orbitron", sans-serif; }
+    html #leaderboard caption {
+      color: #FFFFFF;
+      font-size: 4em;
+      background-color: #111111;
+      font-family: "Poiret One", cursive; }
+    html #leaderboard tr:nth-child(even) {
+      background-color: #F7F7F7; }
+    html #leaderboard tr:nth-child(odd) {
+      background-color: #FFFFFF; }
 
-#leaderboard {
-  text-align: center;
-}
-
-.sortable {
-  text-decoration: underline;
-}
-
-.sortable:hover {
-  cursor: pointer;
-}
-
-.username {
-  font-size: 1em;
-}
-
-table {
-  margin: 0 auto;
-  width: 80%;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  width: 50px;
-  height: 50px;
-  position: relative;
-  border-radius: 8px;
-}
-
-table,
-th,
-td,
-caption {
-  border: 1px solid lightgray;
-}
-
-th {
-  font-size: 1.5em;
-  padding: 15px;
-  color: darkblue;
-}
-
-td {
-  font-size: 1.1em;
-}
-
-caption {
-  color: white;
-  font-size: 3em;
-  background-color: black;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-
-tr:nth-child(odd) {
-  background-color: #ffffff;
-}
+/*# sourceMappingURL=stylesheet.css.map */
