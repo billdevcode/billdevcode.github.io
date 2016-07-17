@@ -1,6 +1,6 @@
-# React Leaderboard
+# FCC Leaderboard
 
-React Leaderboard is an app used to track Free Code Camp's top helpers in recent 30 days and all times.
+FCC Leaderboard is an app used to track Free Code Camp's top helpers in recent 30 days and all times. It's built using React.js, Sass and FCC's API
 
 ## Usage
 
