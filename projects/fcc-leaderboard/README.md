@@ -4,7 +4,7 @@ FCC Leaderboard is an app used to track Free Code Camp's top helpers in recent 3
 
 ## Usage
 
-View the app live at [fcc-leaderboard-react.js](https://billdevcode.github.io/projects/react-leaderboard/index.html)
+View the app live at [fcc-leaderboard-react.js](https://billdevcode.github.io/projects/fcc-leaderboard/index.html)
 
 ## Contributing
 
