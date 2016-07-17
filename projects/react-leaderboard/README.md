@@ -4,7 +4,7 @@ React Leaderboard is an app used to track Free Code Camp's top helpers in recent
 
 ## Usage
 
-View the app live at [react-leaderboard](https://billdevcode.github.io/projects/react-leaderboard/index.html)
+View the app live at [fcc-leaderboard-react.js](https://billdevcode.github.io/projects/react-leaderboard/index.html)
 
 ## Contributing
 
