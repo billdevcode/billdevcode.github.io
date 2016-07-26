@@ -17,7 +17,10 @@ class LeaderBoard extends React.Component {
         users: users
       });
       recentList = users;
-    }.bind(this));
+    }.bind(this))
+    .fail(function() {
+    alert( "API is down, please check back later" );
+  });
 
     $.get(urlAlltime, function(users) {
       alltimeList = users;
