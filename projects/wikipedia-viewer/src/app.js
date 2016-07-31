@@ -4,7 +4,7 @@ $(document).ready(function() {
     desc = [],
     link = [],
     val = $('#search-box'),
-    url = 'http://en.wikipedia.org/w/api.php?action=opensearch&search=';
+    url = 'https://en.wikipedia.org/w/api.php?action=opensearch&search=';
 
   $('#search-box').focus();
 
