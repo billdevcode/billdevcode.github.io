@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Twitch.tv project</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="src/stylesheet.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <form id="live-search" class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+            <input id="search" type="text" placeholder="Search for account" class="text-input form-control">
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+    <div class="container buttons">
+      <h1><i class="fa fa-twitch"></i> Twitch.tv API</h1>
+      <p>
+        Know when your favorite streamers are online and see what
+        <br> they're up to. You can also search for their account names.
+      </p>
+      <div class="nav navbar-nav">
+        <a id="all-button" class="btn btn-primary btn-lg" role="button">All Users</a>
+        <a id="online-button" class="btn btn-success btn-lg" role="button">Online <i class="fa fa-user"></i></a>
+        <a id="offline-button" class="btn btn-danger btn-lg" role="button">Offline <i class="fa fa-user-times"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div id="account-list" class="container account-list">
+    <div id="online" class="row online">
+    </div>
+    <br>
+    <div id="offline" class="row offline">
+    </div>
+    <br>
+    <div id="closed" class="row closed">
+    </div>
+  </div>
+  </div>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="src/app.js"></script>
+</body>
+
+</html>
