@@ -8,7 +8,6 @@ var countDown;
 
 //on load
 function init() {
-  minutes--;
   clearInterval(countDown);
   seconds = 60;
   minutes = 25;
@@ -23,6 +22,7 @@ function init() {
 $('#start').click(function() {
   $('.setTime').hide();
   $('.timer').show();
+  minutes--;
   timer();
   $(this).attr("disabled", "disabled").css("opacity", "0.2");
   $('#stop, #reset').removeAttr("disabled").css("opacity", "1");
