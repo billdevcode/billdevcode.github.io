@@ -1,6 +1,10 @@
 # Pomodoro Clock
 
-Built using JavaScript and jQuery logic. Learn more about Pomodoro at [Wikipedia](https://en.wikipedia.org/wiki/Pomodoro_Technique) 
+Pomodoro Clock is an app used for the Pomodoro Technique. It's built using JavaScript and jQuery logic. Learn more about Pomodoro at [Wikipedia](https://en.wikipedia.org/wiki/Pomodoro_Technique) 
+
+## Usage
+
+View the app live at [pomodoro-clock](https://billdevcode.github.io/projects/pomodoro-clock/index.html)
 
 ## Contributing
 
