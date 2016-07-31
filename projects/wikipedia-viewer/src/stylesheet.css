@@ -1,0 +1,97 @@
+html,
+body {
+  background-color: black;
+}
+
+.jumbotron {
+  margin-top: 150px;
+  text-align: center;
+  font-family: 'open sans';
+  background-image: url('wikipedia-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  color: silver;
+}
+
+.form-group {
+  width: 600px;
+  height: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#search-box {
+  width: 450px;
+  height: 45px;
+  font-size: 20px;
+  color: black;
+  margin-top: 5px;
+  background-color: white;
+}
+
+#search-box:focus,
+.search-button:hover,
+.search-button:active,
+.search-button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.search-button {
+  padding-top: 5px;
+  width: 45px;
+  height: 44.5px;
+  background-color: black;
+  border: none;
+}
+
+.fa-search {
+  color: blue;
+}
+
+.jumbotron>p {
+  font-size: 18px;
+}
+
+.wiki-container {
+  margin: auto;
+  width: 1000px;
+  font-family: 'open sans';
+}
+
+.results {
+  width: 800px;
+  min-height: 100px;
+  background-color: #dddddd;
+  box-shadow: 5px 5px 2px #888888;
+  border-left: 10px solid gray;
+  margin-left: 120px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.results:hover {
+  background-color: #FFFFFF;
+  border-left: 10px solid blue;
+}
+
+.results a {
+  text-decoration: none;
+  outline: none;
+}
+
+.results {
+  position: relative;
+  -webkit-animation: resultsAnimation 3s;
+}
+
+@-webkit-keyframes resultsAnimation {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.9;
+  }
+}
