@@ -1,0 +1,57 @@
+body {
+  margin-top: 60px;
+  background-image: url('background.jpg');
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 70px;
+}
+
+#menu {
+  padding: 15px;
+  color: silver;
+  font-size: 30px;
+  text-align: center;
+}
+
+#red,
+#blue,
+#play1,
+#play2 {
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+#red {
+  background: red;
+}
+
+#blue {
+  background: blue;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+}
+
+#draw,
+#lose,
+.again {
+  color: white;
+}
+
+#game-board {
+  margin-left: 420px;
+}
+
+canvas {
+  border: 2px solid white;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}

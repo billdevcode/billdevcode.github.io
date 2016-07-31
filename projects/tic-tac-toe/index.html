@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang-"en">
+
+<head>
+  <title>Tic-Tac-Toe: can you beat the computer?</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="src/stylesheet.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Tic-Tac-Toe</h1>
+    <div id="menu">
+      <p id="choose">Play as
+        <button id="red" class="btn-x btn btn-lg btn-default buttons"></button> or
+        <button id="blue" class="btn-o btn btn-lg btn-default buttons"></button> ?</p>
+      <p id="comp-turn" class="hidden">Computer's Turn</p>
+      <p id="user-turn" class="hidden">Your Turn</p>
+      <p id="lose" class="hidden">You Lose! Play again?
+        <button id="play1" class="btn btn-lg btn-success again"><i class="fa fa-play"></i></button>
+      </p>
+      <p id="draw" class="hidden">Draw! Play again?
+        <button id="play2" class="btn btn-lg btn-success again"><i class="fa fa-play"></i></button>
+      </p>
+    </div>
+
+    <div id="game-board">
+      <canvas id="c1"></canvas>
+      <canvas id="c2"></canvas>
+      <canvas id="c3"></canvas>
+      <br>
+      <canvas id="c4"></canvas>
+      <canvas id="c5"></canvas>
+      <canvas id="c6"></canvas>
+      <br>
+      <canvas id="c7"></canvas>
+      <canvas id="c8"></canvas>
+      <canvas id="c9"></canvas>
+    </div>
+  </div>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="src/app.js"></script>
+</body>
+
+</html>
