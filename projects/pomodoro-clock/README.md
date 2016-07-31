@@ -14,10 +14,6 @@ View the app live at [pomodoro-clock](https://billdevcode.github.io/projects/pom
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## History
-
-Part of FreeCodeCamp's front-end certificate challenge: https://www.freecodecamp.com/challenges/build-a-pomodoro-clock
-
 ## License
 
 MIT License
