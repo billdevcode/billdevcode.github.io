@@ -17,10 +17,10 @@ html {
       flex-wrap: wrap;
       font-family: "Poiret One", cursive; }
     html #leaderboard .sorting {
-      text-decoration: none; }
+      text-decoration: underline; }
       html #leaderboard .sorting:hover {
         cursor: pointer;
-        text-decoration: underline; }
+        color: blue; }
     html #leaderboard .username {
       font-size: 1em;
       position: relative; }

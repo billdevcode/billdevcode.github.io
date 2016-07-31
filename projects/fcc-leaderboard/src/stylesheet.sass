@@ -1,6 +1,8 @@
-html
+$Poiret-font: 'Poiret One', cursive
+
+html 
   background-color: #AAAAAA
-  #leaderboard
+  #leaderboard 
     text-align: center
     .table-wrapper
       overflow-x: auto
@@ -15,21 +17,21 @@ html
       justify-content: space-around
       align-items: center
       flex-wrap: wrap
-      font-family: 'Poiret One', cursive
-    .sorting
-      text-decoration: none
-      &:hover
+      font-family: $Poiret-font
+    .sorting 
+      text-decoration: underline
+      &:hover 
         cursor: pointer
-        text-decoration: underline
-    .username
+        color: blue
+    .username 
       font-size: 1em
       position: relative
-    table
+    table 
       margin: 0 auto
       width: 60%
-    a
+    a 
       text-decoration: none
-    img
+    img 
       width: 50px
       height: 50px
       border-radius: 5px
@@ -39,24 +41,25 @@ html
     table,
     th,
     td,
-    caption
+    caption 
       border: 1px solid lightgray
       border-collapse: collapse
       font-weight: bold
-    th
+    th 
       font-size: 1.3em
       padding: 15px
       color: #001f3f
-      font-family: 'Poiret One', cursive
-    td
+      font-family: $Poiret-font
+    td 
       font-size: 1.1em
       font-family: 'Orbitron', sans-serif
-    caption
+    caption 
       color: #FFFFFF
       font-size: 4em
       background-color: #111111
-      font-family: 'Poiret One', cursive
-    tr:nth-child(even)
+      font-family: $Poiret-font
+    tr:nth-child(even) 
       background-color: #F7F7F7
-    tr:nth-child(odd)
+    tr:nth-child(odd) 
       background-color: #FFFFFF
+      
