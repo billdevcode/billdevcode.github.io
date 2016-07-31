@@ -1,0 +1,91 @@
+body {
+  background-color: #FFF0F5;
+}
+
+#calculator {
+  margin-top: 50px;
+}
+
+.frame-wrapper {
+  border: 1px #BCC6CC solid;
+  box-shadow: 10px 5px 10px #111111;
+  text-align: center;
+  position: relative;
+  width: 240px;
+  height: 450px;
+  border-radius: 50% / 10%;
+  color: white;
+  margin: auto;
+  text-indent: .1em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DCDCDC));
+  background: -moz-linear-gradient(top, #EDEDED, #DCDCDC);
+}
+
+.frame-wrapper:before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  background: inherit;
+  border-radius: 5% / 50%;
+  text-align: center;
+}
+
+h3 {
+  padding-top: 15px;
+  color: black;
+}
+
+.frame-wrapper p {
+  color: gray;
+}
+
+.well {
+  padding-bottom: 40px;
+  width: 200px;
+  height: 20px;
+  text-align: right;
+  margin-left: 20px;
+  color: black;
+  font-size: 20px;
+  border-color: gray;
+}
+
+.row {
+  width: 250px;
+}
+
+button {
+  background-color: #111111;
+  color: white;
+  font-size: 20px;
+  width: 40px;
+  height: 35px;
+  margin: 5px;
+  border-color: gray;
+  border-radius: 50% / 10%;
+  text-align: center;
+  box-shadow: 0 1px 5px black;
+  text-decoration: none;
+  outline: 0;
+}
+
+#button-clear {
+  background-color: #FF4136;
+  color: white;
+}
+
+a {
+  margin: auto;
+  padding: auto;
+  text-decoration: none;
+}
+
+#button-equal {
+  height: 40px;
+  width: 228px;
+}
+
+.buttons button {
+  text-decoration: none;
+}

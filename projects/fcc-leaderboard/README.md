@@ -14,10 +14,6 @@ View the app live at [fcc-leaderboard](https://billdevcode.github.io/projects/fc
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## History
-
-Part of FreeCodeCamp's React challege: https://www.freecodecamp.com/challenges/build-a-camper-leaderboard
-
 ## License
 
 MIT License
