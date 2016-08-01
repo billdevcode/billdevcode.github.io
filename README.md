@@ -4,7 +4,7 @@ Hey, I'm Bill. This is where I keep all my projects.
 
 ## Usage
 
-View the app live at [billdevcode.github.io](https://billdevcode.github.io/portfolio.html).
+View the app live at [billdevcode.github.io](https://billdevcode.github.io/).
 
 ## Contributing
 
