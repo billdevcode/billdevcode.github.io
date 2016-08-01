@@ -1,6 +1,6 @@
 # Famous Quotes for a Rainy Day
 
-Famous Quotes for a Rainy Day is an app used to generate random quotes during rainy days. It's built using JavaScript, jQuery and Forismatic API.
+Famous Quotes for a Rainy Day is an app used to generate random quotes during rainy days. It's built using JavaScript and jQuery.
 
 ## Usage
 
