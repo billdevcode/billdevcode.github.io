@@ -5,36 +5,81 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-index.css">
-  <title>Blog Index Page</title>
+  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <title>Bill's Website</title>
 </head>
 
 <body>
 
-  <header>
-    <h1>My Blog and Journey at Dev Bootcamp</h1>
-  </header>
+  <nav>
+    <ul class="navbar">
+      <li><a href="blog/index.html" target="_blank">Blog</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#home">Home</a></li>
+    </ul>
+  </nav>
 
-  <main>
-    <div class="outer-div">
-      <div class="img-div">
-        <img src="../imgs/dev-bootcamp.jpg" alt="Dev Bootcamp">
-      </div>
+  <div id="home">
+    <section>
+      <h1>Welcome!</h1>
+    </section>
+  </div>
 
-      <div>
-        <ol>
-          <li><a href="git.html" target="_blank">Introducing the Command Line, Git and GitHub</a></li>
-          <li><a href="css-concepts.html" target="_blank">Best Practices Using ID and Class Selectors</a></li>
-          <li><a href="arrays-hashes.html" target="_blank">Ruby: Arrays and Hashes</a></li>
-          <li><a href="enumerable-methods.html" target="_blank">Ruby: Map Method</a></li>
-          <li><a href="ruby-classes.html" target="_blank">Ruby Classes and Instances</a></li>
-          <li><a href="JavaScript.html" target="_blank">Ruby and JavaScript If Statements</a></li>
-          <li><a href="tech.html" target="_blank">Test-Driven Development</a></li>
-          <li><a href="personal-website.html" target="_blank">Building a Personal Website</a></li>
-        </ol>
+  <div id="about" class="about-me">
+    <section id="about-me-left">
+      <div class="about-left about-me">
+        <h4 class="contact-me-h4">Contact Me</h4>
+        <ul>
+          <li><a href="mailto:billyd2013@gmail.com"><i class="fa fa-envelope"></i><br>billyd2013@gmail.com</a></li>
+
+          <li><br><a href="https://github.com/billdevcode" target="_blank"><i class="fa fa-github"></i><br>Github</a></li>
+
+          <li><br><a href="https://www.linkedin.com/in/dengbilly" target="_blank"><i class="fa fa-linkedin-square"></i><br>LinkedIn</a></li>
+        </ul>
       </div>
-    </div>
-  </main>
+    </section>
+
+    <section id="about-me-right">
+      <div class="about-right about-me">
+        <h4>Bill Deng</h4>
+        <img src="imgs/bill-picture.jpg" alt="Picture of Bill">
+        <p class="first-p">
+          Hello my name is Bill. I'm currently living in San Francisco and attending Dev Bootcamp's 19-weeks 
+          Full-Stack Web Developer program. During this 19-weeks, I have an opportunity to collaborate with 
+          highly motivated and energetic people just like myself. It's going to be a life-changing experience 
+          and I'm looking forward to it.
+        </p>
+        <p>
+          This site is a work-in-progress and will serve as a showcase for my weekly blogs and projects. 
+          I will add new features while I go through this journey.
+        </p>
+
+      </div>
+    </section>
+  </div>
+
+
+  <div class="projects">
+    <section id="projects">
+      <h2>My Projects</h2>
+
+      <img src="imgs/placeholder.jpg" alt="Placeholder Image">
+      <img src="imgs/placeholder.jpg" alt="Placeholder Image">
+      <img src="imgs/placeholder.jpg" alt="Placeholder Image">
+    </section>
+  </div>
+
+
+  <footer>
+
+    <p>
+      Made with HTML, CSS and coffee &copy; 2016 Bill Deng
+    </p>
+  </footer>
+
 </body>
 
 </html>
