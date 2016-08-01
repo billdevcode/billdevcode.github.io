@@ -1,6 +1,6 @@
 # My Portfolio
 
-Hey, I'm Bill. This is where I keep all my [projects](https://billdevcode.github.io/).
+Hey, I'm Bill. This is where I keep all my projects.
 
 ## Usage
 
