@@ -1,0 +1,176 @@
+.navbar-header .navbar {
+  text-decoration: none;
+}
+
+.navbar .container {
+  font-family: 'open sans';
+}
+
+.home {
+  height: 650px;
+  background-image: url('../imgs/bg1.jpg');
+  background-size: cover;
+}
+
+.home>.jumbotron>h1 {
+  color: #DDDDDD;
+  font-family: lobster;
+  margin-top: 200px;
+}
+
+.home>.jumbotron {
+  height: 260px;
+  background: rgba(0, 0, 0, 0.5);
+  background: transparent;
+  text-align: center;
+}
+
+.home>.jumbotron>p {
+  margin: 15px;
+  color: #FFFFFF;
+  font-family: 'open sans';
+}
+
+.box {
+  width: 450px;
+  color: white;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.buttons {
+  color: orange;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: none;
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+.buttons:hover,
+.buttons:active,
+.buttons:visited {
+  color: orange;
+}
+
+.zip-quote {
+  background-image: url('../imgs/random-quotes.png');
+  background-size: cover;
+  max-width: 100%;
+  height: 450px;
+}
+
+.textbox-quote {
+  float: left;
+  margin-top: 300px;
+}
+
+.zip-calculator {
+  background-image: url('../imgs/javascript-calculator.png');
+  background-size: cover;
+  max-width: 100%;
+  height: 450px;
+}
+
+.textbox-calculator {
+  float: right;
+  margin-top: 300px;
+  color: black;
+}
+
+.zip-clock {
+  background-image: url('../imgs/pomodoro-clock.png');
+  background-size: cover;
+  max-width: 100%;
+  height: 450px;
+}
+
+.textbox-clock {
+  float: left;
+  margin-top: 300px;
+}
+
+.zip-twitch {
+  background-image: url('../imgs/twitchTV.png');
+  background-size: cover;
+  max-width: 100%;
+  height: 450px;
+}
+
+.textbox-twitch {
+  float: right;
+  margin-top: 300px;
+}
+
+.react-fcc-leaderboard {
+  background-image: url('../imgs/fcc-leaderboard.png');
+  background-size: cover;
+  max-width: 100%;
+  height: 450px;
+}
+
+.textbox-fcc-leaderboard {
+  float: left;
+  margin-top: 300px;
+  background-color: silver;
+  color: black;
+  border-radius: 8px;
+  padding-left: 10px;
+  opacity: 0.9;  
+}
+
+.react-fcc-leaderboard>.textbox-fcc-leaderboard>p>a {
+  color: blue;
+}
+
+.zip-wiki {
+  background-image: url('../imgs/wikipedia-viewer.png');
+  background-size: cover;
+  max-width: 100%;
+  height: 450px;
+}
+
+.textbox-wiki {
+  float: right;
+  margin-top: 300px;
+  margin-right: -100px;
+}
+
+.zip-tic-tac-toe {
+  background-image: url('../imgs/tic-tac-toe.png');
+  background-size: cover;
+  max-width: 100%;
+  height: 450px;
+}
+
+.textbox-tic-tac-toe {
+  float: left;
+  margin-top: 300px;
+}
+
+.zip-simon {
+  background-image: url('../imgs/simon-game.png');
+  background-size: cover;
+  max-width: 100%;
+  height: 450px;
+}
+
+.textbox-simon {
+  float: right;
+  margin-top: 300px;
+  margin-right: -100px;
+}
+
+#contact h3 {
+  color: white;
+}
+
+#contact {
+  text-align: center;
+  height: 130px;
+  background-color: black;
+}
+
+#contact a {
+  margin: 10px;
+}
