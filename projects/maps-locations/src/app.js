@@ -3,9 +3,9 @@ $(document).ready(function() {
     useSideSearch = false, pyrmont, mapZoom = 14,
     places = {};
   
-    getGeoLocation();
+  getGeoLocation();
 
- function getGeoLocation() {
+  function getGeoLocation() {
     var url = 'https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyAytr024G7F4gULgAW1eMTtExZjaFwJuzE';
     $.ajax({
       url: url,
@@ -32,7 +32,6 @@ $(document).ready(function() {
       bounds: defaultBounds,
     };
     autocomplete = new google.maps.places.Autocomplete(input, options);
-
   }
 
   $('.main-button, .sidenav-button').on("click", function() {
@@ -134,6 +133,12 @@ $(document).ready(function() {
       $(".sidenav-button").click();
     }
   });
+
+  $(document).on('keydown', function(e) {
+    if (e.which == 27 && useSideSearch) {
+      $("#close-nav").click();
+    }
+  })
 
   function slideSideNav() {
     var mq = window.matchMedia( "(min-width: 500px)" );
