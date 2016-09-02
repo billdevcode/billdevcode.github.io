@@ -152,8 +152,7 @@ $(document).ready(function() {
     $("#map").css("marginLeft", "0");
     $(".sidenav").css("width", "0");
     $(".search-container").show();
-    useSideSearch = false;
     $("#search-query").focus();
+    useSideSearch = false;
   });
-
 });
