@@ -1,18 +1,19 @@
 $(document).ready(function() {
-  var map, infowindow, querySearch, useSideSearch = false, 
-    pyrmont, mapZoom = 14,
+  var map, infowindow, querySearch, address, 
+    useSideSearch = false, pyrmont, mapZoom = 14,
     places = {};
   
     getGeoLocation();
 
  function getGeoLocation() {
     var url = 'https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyAytr024G7F4gULgAW1eMTtExZjaFwJuzE';
-
     $.ajax({
       url: url,
       method: 'POST',
     }).done(function(data) {
       initMap(data.location.lat, data.location.lng);
+    }).fail(function() {
+      alert("Cannot detect your location");
     });
   }
 
@@ -26,12 +27,10 @@ $(document).ready(function() {
     var defaultBounds = new google.maps.LatLngBounds(
       new google.maps.LatLng(lat, lng),
       new google.maps.LatLng(lat, lng));
-
     var input = document.getElementById('search-query');
     var options = {
       bounds: defaultBounds,
     };
-
     autocomplete = new google.maps.places.Autocomplete(input, options);
 
   }
@@ -45,7 +44,6 @@ $(document).ready(function() {
 
     $(".search-container").hide();
     $(".results-list").empty();
-
     querySearch = $('#search-query').val();
 
     if (useSideSearch) {
@@ -78,7 +76,11 @@ $(document).ready(function() {
     }
 
     function addSearchResultToSide(place) {
-      $(".results-list").append(`<li id="${place.place_id}">${place.name}</li>`)
+      address = place.formatted_address.split(',');
+      $(".results-list").append(
+        `<li id="${place.place_id}">${place.name}<br>
+        ${address[0]}<br>
+        ${address[1]}, ${address[2]}</li>`)
     }
     slideSideNav();
 
@@ -96,7 +98,8 @@ $(document).ready(function() {
         map: map,
       })
       setContentToMarker(place);
-      infowindow.open(map, marker)
+      infowindow.open(map, marker);
+      createMarker(place);
     });
 
     function createMarker(place) {
@@ -113,15 +116,11 @@ $(document).ready(function() {
   });
 
   function setContentToMarker(place) {
-    let address = {};
-    let completeAddress = place.formatted_address.split(',');
-    address.street = completeAddress[0];
-    address.city = completeAddress[1];
-    address.stateZip = completeAddress[2];
+    address = place.formatted_address.split(',');
     infowindow.setContent(
-      `<strong>${place.name}</strong> <br> 
-          ${address.street} <br>
-          ${address.city}, ${address.stateZip}`);
+      `<strong>${place.name}</strong><br> 
+      ${address[0]}<br>
+      ${address[1]}, ${address[2]}`);
   }
 
   $("#search-query").keydown(function(e) {
@@ -149,11 +148,12 @@ $(document).ready(function() {
   }
 
   $("#close-nav").on("click", function() {
+    $("#search-query").val('').focus();
     $("#map").css("marginLeft", "0");
     $(".sidenav").css("width", "0");
     $(".search-container").show();
-    $("#search-query").val('').focus();
     useSideSearch = false;
+    $("#search-query").focus();
   });
 
 });
