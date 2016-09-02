@@ -1,0 +1,135 @@
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 0.7em;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-family: 'Dosis', sans-serif;
+}
+
+.search-container {
+  z-index: 1;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#search-query,
+.search-button,
+#sidenav-query {
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.search-container h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+#search-query {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  width: 33%;
+}
+
+#sidenav-query {
+  font-size: 1em;
+  padding: 10px 20px;
+  width: 50%;
+  margin: 5px;
+}
+
+.sidenav-container {
+  text-align: center;
+}
+
+.search-button {
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+  border: 1px solid #008CBA;
+}
+
+.search-button:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.sidenav-button {
+  padding: 3px 7px;
+  font-size: 0.7em;
+}
+
+#map {
+  height: 100%;
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+.sidenav {
+  height: 95%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+li {
+  list-style-type: none;
+}
+
+.sidenav a,
+li {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 1em;
+  color: silver;
+  display: block;
+  transition: 0.3s
+}
+
+.sidenav a:hover,
+li:hover {
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+.sidenav #close-nav {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
