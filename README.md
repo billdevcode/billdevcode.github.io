@@ -1,6 +1,6 @@
 # My Portfolio
 
-Hey, I'm Bill and this is my portfolio repo
+Hey, I'm Bill and this is my personal portfolio repo
 
 ## Usage
 
