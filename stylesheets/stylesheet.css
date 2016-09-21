@@ -1,5 +1,11 @@
+html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
 .navbar-header .navbar {
   text-decoration: none;
+  max-width: 100%;
 }
 
 .navbar .container {
