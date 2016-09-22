@@ -21,8 +21,16 @@ html, body {
   transition: all 0.8s ease;
 }
 
+.navbar-right a {
+  font-size: 1.8em;
+}
+
+.navbar-right a:hover {
+  text-decoration: none;
+}
+
 .home {
-  height: 650px;
+  height: 70vh;
   background-image: url('../imgs/bg1.jpg');
   background-size: cover;
 }
@@ -35,7 +43,7 @@ html, body {
 
 .home>.jumbotron {
   height: 260px;
-  background: rgba(0, 0, 0, 0.5);
+  /*background: rgba(0, 0, 0, 0.5);*/
   background: transparent;
   text-align: center;
 }
@@ -62,76 +70,83 @@ html, body {
   outline: none !important;
 }
 
-.buttons:hover,
-.buttons:active,
-.buttons:visited {
-  color: orange;
+.buttons:hover {
+  color: #FF4500;
 }
 
 .zip-quote {
   background-image: url('../imgs/random-quotes.png');
   background-size: cover;
   max-width: 100%;
-  height: 450px;
+  height: 50vh;
 }
 
 .textbox-quote {
   float: left;
-  margin-top: 300px;
+  margin-top: 35vh;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding-left: 10px;
 }
 
 .zip-calculator {
   background-image: url('../imgs/javascript-calculator.png');
   background-size: cover;
   max-width: 100%;
-  height: 450px;
+  height: 50vh;
 }
 
 .textbox-calculator {
   float: right;
-  margin-top: 300px;
-  color: black;
+  margin-top: 35vh;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding-left: 10px;
 }
 
 .zip-clock {
   background-image: url('../imgs/pomodoro-clock.png');
   background-size: cover;
   max-width: 100%;
-  height: 450px;
+  height: 50vh;
 }
 
 .textbox-clock {
   float: left;
-  margin-top: 300px;
+  margin-top: 35vh;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding-left: 10px;
 }
 
 .zip-twitch {
   background-image: url('../imgs/twitchTV.png');
   background-size: cover;
   max-width: 100%;
-  height: 450px;
+  height: 50vh;
 }
 
 .textbox-twitch {
   float: right;
-  margin-top: 300px;
+  margin-top: 35vh;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding-left: 10px;
 }
 
 .react-fcc-leaderboard {
   background-image: url('../imgs/fcc-leaderboard.png');
   background-size: cover;
   max-width: 100%;
-  height: 450px;
+  height: 50vh;
 }
 
 .textbox-fcc-leaderboard {
   float: left;
-  margin-top: 300px;
-  background-color: silver;
-  color: black;
+  margin-top: 35vh;
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   padding-left: 10px;
-  opacity: 0.9;  
 }
 
 .react-fcc-leaderboard>.textbox-fcc-leaderboard>p>a {
@@ -142,38 +157,45 @@ html, body {
   background-image: url('../imgs/wikipedia-viewer.png');
   background-size: cover;
   max-width: 100%;
-  height: 450px;
+  height: 50vh;
 }
 
 .textbox-wiki {
   float: right;
-  margin-top: 300px;
-  margin-right: -100px;
+  margin-top: 35vh;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding-left: 10px;
 }
 
 .zip-tic-tac-toe {
   background-image: url('../imgs/tic-tac-toe.png');
   background-size: cover;
   max-width: 100%;
-  height: 450px;
+  height: 50vh;
 }
 
 .textbox-tic-tac-toe {
   float: left;
-  margin-top: 300px;
+  margin-top: 35vh;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding-left: 10px;
 }
 
 .zip-simon {
   background-image: url('../imgs/simon-game.png');
   background-size: cover;
   max-width: 100%;
-  height: 450px;
+  height: 50vh;
 }
 
 .textbox-simon {
   float: right;
-  margin-top: 300px;
-  margin-right: -100px;
+  margin-top: 35vh;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding-left: 10px;
 }
 
 #contact h3 {
@@ -182,10 +204,19 @@ html, body {
 
 #contact {
   text-align: center;
-  height: 130px;
-  background-color: black;
+  height: 15vh;
+  background-color: #222;
 }
 
 #contact a {
   margin: 10px;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  opacity: 0.7;
+}
+
+h2 {
+  font-size: 1.8em;
 }
