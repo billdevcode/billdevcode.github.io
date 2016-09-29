@@ -74,6 +74,15 @@ html, body {
   color: #FF4500;
 }
 
+.buttons:active {
+  color: blue;
+}
+
+.right-button {
+  float: right;
+  margin-right: 20%;
+}
+
 .maps-locations {
   background-image: url('../imgs/maps-locations.png');
   background-size: cover;
