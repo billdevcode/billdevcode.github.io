@@ -21,6 +21,10 @@ html, body {
   transition: all 0.8s ease;
 }
 
+.navbar-inverse .btn-link {
+  /*color: #9d9d9d;*/
+}
+
 .navbar-right a {
   font-size: 1.8em;
 }
