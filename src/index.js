@@ -6,7 +6,7 @@ $(document).ready(function() {
 		var checkPosition = false;
 
 		if (scrollPosition >= 1000 && !checkPosition) {
-			$("#navbar").css("background", "#222");
+			$("#navbar").css("background", "#dddddd");
 			checkPosition = true;
 		} else if (scrollPosition < 1000) {
 			$("#navbar").css("background-color", "transparent");
