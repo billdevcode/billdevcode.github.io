@@ -53,14 +53,25 @@ body {
 }
 
 .home {
-  height: 70vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('../imgs/bg1.jpg');
+  background-color: #000;
+
+  /* background-image: url('../imgs/bg1.jpg'); */
   background-size: cover;
   text-align: center;
+}
+
+.home-video {
+  height: 100%;
+}
+
+.home-header {
+  position: absolute;
+  z-index: 1;
 }
 
 .home__title {
@@ -133,6 +144,10 @@ body {
 
 .maps-locations {
   background-image: url('../imgs/maps-locations.png');
+}
+
+.javascript-data-table {
+  background-image: url('../imgs/javascript-data-table.png');
 }
 
 .zip-quote {
