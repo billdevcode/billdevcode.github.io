@@ -1,0 +1,92 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+.menu-dashboard {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.data-toggle-show-hide {
+  margin-bottom: 30px;
+}
+
+.data-toggle-show-hide span {
+  margin-right: 10px;
+}
+
+.search-box {
+  height: 30px;
+  width: 200px;
+  font-size: 20px;
+}
+
+.data-table {
+  width: 100%;
+  padding: 5px;
+}
+
+.row-headings {
+  position: relative;
+  padding: 20px;
+  border: 1px solid gray;
+  cursor: pointer;
+  background-color: silver;
+  background-image: url("../assets/sort.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  font-size: 16px;
+}
+
+.row-headings:hover {
+  cursor: pointer;
+}
+
+.ascending,
+.descending {
+  background-color: gray;
+  color: white;
+}
+
+.data-cell {
+  padding: 2px;
+  border: 1px solid silver;
+  text-align: center;
+  font-size: 14px;
+}
+
+.table-controls-bar {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-controls-pages,
+.table-controls {
+  margin: 10px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.table-controls-pages:hover,
+.table-controls:hover {
+  text-decoration: underline;
+}
+
+.table-controls-pages--active {
+  background-color: silver;
+  color: white;
+}
