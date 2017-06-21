@@ -23,6 +23,9 @@ html, body {
 
 .toggle-nav {
   background-color: #dddddd !important;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
 }
 
 .navbar-right a {
@@ -232,7 +235,7 @@ html, body {
 
 #contact {
   text-align: center;
-  height: 15vh;
+  height: 17vh;
   background-color: #222;
 }
 
