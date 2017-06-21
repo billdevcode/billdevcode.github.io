@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   width: auto !important;
   overflow-x: hidden !important;
 }
@@ -6,6 +7,7 @@ html, body {
 #navbar {
   background-color: transparent;
 }
+
 .navbar-header .navbar {
   text-decoration: none;
   max-width: 100%;
@@ -21,8 +23,22 @@ html, body {
   transition: all 0.8s ease;
 }
 
+.navbar-form {
+  display: flex;
+  justify-content: center;
+  border-color: transparent !important;
+}
+
+.navbar-toggle {
+  border-color: transparent !important;
+}
+
+.navbar-toggle:hover {
+  background-color: transparent !important;
+}
+
 .toggle-nav {
-  background-color: #dddddd !important;
+  background-color: #ddd !important;
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 8px 6px -6px black;
@@ -38,195 +54,117 @@ html, body {
 
 .home {
   height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-image: url('../imgs/bg1.jpg');
   background-size: cover;
-}
-
-.home>.jumbotron>h1 {
-  color: #DDDDDD;
-  font-family: lobster;
-  margin-top: 200px;
-}
-
-.home>.jumbotron {
-  height: 260px;
-  /*background: rgba(0, 0, 0, 0.5);*/
-  background: transparent;
   text-align: center;
 }
 
-.home>.jumbotron>p {
-  margin: 15px;
-  color: #FFFFFF;
-  font-family: 'open sans';
+.home__title {
+  color: #ddd;
+  font-family: lobster;
+  font-size: 4em;
 }
 
-.box {
-  width: 450px;
+.home__text {
+  color: #fff;
+  font-family: 'open sans';
+  font-size: 1.7em;
+}
+
+.image-wrapper {
+  position: relative;
+  max-width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.text-box-right,
+.text-box-left {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 10px;
+  width: 100%;
+  max-width: 450px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
   color: white;
-  margin: 10px;
   font-size: 20px;
+  text-align: center;
+}
+
+.text-box-right {
+  right: 10px;
+}
+
+.text-box-left {
+  left: 10px;
+}
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 15px;
+  text-transform: uppercase;
 }
 
 .buttons {
-  color: orange;
-  font-size: 20px;
-  text-transform: uppercase;
   border: none;
+  color: orange;
   text-decoration: none !important;
   outline: none !important;
 }
 
 .buttons:hover {
-  color: #FF4500;
+  color: #ff4500;
 }
 
 .buttons:active {
   color: blue;
 }
 
-.right-button {
-  float: right;
-  margin-right: 20%;
-}
-
 .maps-locations {
   background-image: url('../imgs/maps-locations.png');
-  background-size: cover;
-  max-width: 100%;
-  height: 50vh;
-}
-
-.textbox-maps {
-  float: right;
-  margin-top: 35vh;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
-  padding-left: 10px;
 }
 
 .zip-quote {
   background-image: url('../imgs/random-quotes.png');
-  background-size: cover;
-  max-width: 100%;
-  height: 50vh;
-}
-
-.textbox-quote {
-  float: left;
-  margin-top: 35vh;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
-  padding-left: 10px;
 }
 
 .zip-calculator {
   background-image: url('../imgs/javascript-calculator.png');
-  background-size: cover;
-  max-width: 100%;
-  height: 50vh;
-}
-
-.textbox-calculator {
-  float: right;
-  margin-top: 35vh;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
-  padding-left: 10px;
 }
 
 .zip-clock {
   background-image: url('../imgs/pomodoro-clock.png');
-  background-size: cover;
-  max-width: 100%;
-  height: 50vh;
-}
-
-.textbox-clock {
-  float: left;
-  margin-top: 35vh;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
-  padding-left: 10px;
 }
 
 .zip-twitch {
   background-image: url('../imgs/twitchTV.png');
-  background-size: cover;
-  max-width: 100%;
-  height: 50vh;
-}
-
-.textbox-twitch {
-  float: right;
-  margin-top: 35vh;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
-  padding-left: 10px;
 }
 
 .react-fcc-leaderboard {
   background-image: url('../imgs/fcc-leaderboard.png');
-  background-size: cover;
-  max-width: 100%;
-  height: 50vh;
-}
-
-.textbox-fcc-leaderboard {
-  float: left;
-  margin-top: 35vh;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
-  padding-left: 10px;
-}
-
-.react-fcc-leaderboard>.textbox-fcc-leaderboard>p>a {
-  color: blue;
 }
 
 .zip-wiki {
   background-image: url('../imgs/wikipedia-viewer.png');
-  background-size: cover;
-  max-width: 100%;
-  height: 50vh;
-}
-
-.textbox-wiki {
-  float: right;
-  margin-top: 35vh;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
-  padding-left: 10px;
 }
 
 .zip-tic-tac-toe {
   background-image: url('../imgs/tic-tac-toe.png');
-  background-size: cover;
-  max-width: 100%;
-  height: 50vh;
-}
-
-.textbox-tic-tac-toe {
-  float: left;
-  margin-top: 35vh;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
-  padding-left: 10px;
 }
 
 .zip-simon {
   background-image: url('../imgs/simon-game.png');
-  background-size: cover;
-  max-width: 100%;
-  height: 50vh;
-}
-
-.textbox-simon {
-  float: right;
-  margin-top: 35vh;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
-  padding-left: 10px;
 }
 
 #contact h3 {
@@ -235,7 +173,8 @@ html, body {
 
 #contact {
   text-align: center;
-  height: 17vh;
+  height: 100%;
+  padding: 30px;
   background-color: #222;
 }
 

@@ -1,127 +1,163 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="stylesheets/stylesheet.css">
-    </head>
-
-    <body>
-
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="stylesheets/stylesheet.css">
+   </head>
+   <body>
       <nav id="navbar" class="nav navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    </button>
-          </div>
-          <div class="navbar-collapse collapse">
-            <div class="navbar-form navbar-right nav">
-              <a href="#home" class="btn btn-link btn-lg">Home</a>
-              <a href="#portfolio" class="btn btn-link btn-lg">Portfolio</a>
-              <a href="#contact" class="btn btn-link btn-lg">Contact</a>
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-expanded="false" aria-controls="navbar">
+                 <i class="fa fa-bars" aria-hidden="true"></i>
+               </button>
             </div>
-          </div>
-        </div>
+            <div id="nav" class="navbar-collapse collapse">
+               <div class="navbar-form navbar-right">
+                  <a href="#home" class="btn btn-link btn-lg">Home</a>
+                  <a href="#portfolio" class="btn btn-link btn-lg">Portfolio</a>
+                  <a href="#contact" class="btn btn-link btn-lg">Contact</a>
+               </div>
+            </div>
+         </div>
       </nav>
-
-      <div class="home" id="home">
-        <div class="jumbotron">
-          <h1>Web Development Portfolio</h1>
-          <p>Hey I'm Bill. Welcome to my web development portfolio.</p>
-        </div>
+      <div class="home container-fluid" id="home">
+         <h1 class="home__title">Web Development Portfolio</h1>
+         <p class="home__text">Hey I'm Bill. <br/> Welcome to my web development portfolio.</p>
       </div>
-
       <div class="portfolio" id="portfolio">
-
-      <div class="container-fluid maps-locations">
-          <div class="box textbox-maps">
-            <h2>Google Places API</h2>
-            <a href="https://billdevcode.github.io/projects/maps-locations/index.html" target="_blank" class="buttons" role="button">See it live <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-            <a href="https://github.com/billdevcode/billdevcode.github.io/tree/master/projects/maps-locations" target="_blank" class="buttons right-button" role="button">See codes <i class="fa fa-code" aria-hidden="true"></i></a>
-          </div>
-        </div>
-
-        <div class="container-fluid zip-quote">
-          <div class="box textbox-quote">
-            <h2>Random Quote Machine</h2>
-            <a href="https://billdevcode.github.io/projects/random-quotes/index.html" target="_blank" class="buttons" role="button">See it live <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-            <a href="https://github.com/billdevcode/billdevcode.github.io/tree/master/projects/random-quotes" target="_blank" class="buttons right-button" role="button">See codes <i class="fa fa-code" aria-hidden="true"></i></a>
-          </div>
-        </div>
-
-        <div class="container-fluid zip-calculator">
-          <div class="box textbox-calculator">
-            <h2>JavaScript Calculator</h2>
-            <a href="https://billdevcode.github.io/projects/javascript-calculator/index.html" target="_blank" class="buttons" role="button">See it live <i class="fa fa-chevron-right" aria-hidden="true"></i></a>  
-            <a href="https://github.com/billdevcode/billdevcode.github.io/tree/master/projects/javascript-calculator" target="_blank" class="buttons right-button" role="button">See codes <i class="fa fa-code" aria-hidden="true"></i></a>
-          </div>
-        </div>
-
-        <div class="container-fluid zip-clock">
-          <div class="box textbox-clock">
-            <h2>Pomodoro Clock</h2>
-            <a href="https://billdevcode.github.io/projects/pomodoro-clock/index.html" target="_blank" class="buttons" role="button">See it live <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-            <a href="https://github.com/billdevcode/billdevcode.github.io/tree/master/projects/pomodoro-clock" target="_blank" class="buttons right-button" role="button">See codes <i class="fa fa-code" aria-hidden="true"></i></a>
-          </div>
-        </div>
-
-        <div class="container-fluid zip-twitch">
-          <div class="box textbox-twitch">
-            <h2>Twitch.tv JSON API</h2>
-            <a href="https://billdevcode.github.io/projects/twitchTV/index.html" target="_blank" class="buttons" role="button">See it live <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-            <a href="https://github.com/billdevcode/billdevcode.github.io/tree/master/projects/twitchTV" target="_blank" class="buttons right-button" role="button">See codes <i class="fa fa-code" aria-hidden="true"></i></a>
-          </div>
-        </div>
-
-        <div class="container-fluid react-fcc-leaderboard">
-          <div class="box textbox-fcc-leaderboard">
-            <h2>Camper Leaderboard</h2>
-            <a href="https://billdevcode.github.io/projects/fcc-leaderboard/index.html" target="_blank" class="buttons" role="button">See it live <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-            <a href="https://github.com/billdevcode/billdevcode.github.io/tree/master/projects/fcc-leaderboard" target="_blank" class="buttons right-button" role="button">See codes <i class="fa fa-code" aria-hidden="true"></i></a>
-          </div>
-        </div>
-
-        <div class="container-fluid zip-wiki">
-          <div class="box textbox-wiki">
-            <h2>Wikipedia Viewer</h2>
-            <a href="https://billdevcode.github.io/projects/wikipedia-viewer/index.html" target="_blank" class="buttons" role="button">See it live <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-            <a href="https://github.com/billdevcode/billdevcode.github.io/tree/master/projects/wikipedia-viewer" target="_blank" class="buttons right-button" role="button">See codes <i class="fa fa-code" aria-hidden="true"></i></a>
-          </div>
-        </div>
-
-        <div class="container-fluid zip-tic-tac-toe">
-          <div class="box textbox-tic-tac-toe">
-            <h2>Tic-Tac-Toe Game</h2>
-            <a href="https://billdevcode.github.io/projects/tic-tac-toe/index.html" target="_blank" class="buttons" role="button">See it live <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-            <a href="https://github.com/billdevcode/billdevcode.github.io/tree/master/projects/tic-tac-toe" target="_blank" class="buttons right-button" role="button">See codes <i class="fa fa-code" aria-hidden="true"></i></a>
-          </div>
-        </div>
-
-        <div class="container-fluid zip-simon">
-          <div class="box textbox-simon">
-            <h2>Simon Game</h2>
-            <a href="https://billdevcode.github.io/projects/simon-game/index.html" target="_blank" class="buttons" role="button">See it live <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-            <a href="https://github.com/billdevcode/billdevcode.github.io/tree/master/projects/simon-game" target="_blank" class="buttons right-button" role="button">See codes <i class="fa fa-code" aria-hidden="true"></i></a>
-          </div>
-        </div>
+         <div class="container-fluid maps-locations image-wrapper">
+            <div class="text-box-right">
+               <h2>Google Places API</h2>
+               <span class="buttons-wrapper">
+                 <a href="https://billdevcode.github.io/projects/maps-locations/index.html" target="_blank" class="buttons" role="button">
+                   See it live <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                 </a>
+                 <a href="https://github.com/billdevcode/billdevcode.github.io/tree/master/projects/maps-locations" target="_blank" class="buttons" role="button">
+                   See codes <i class="fa fa-code" aria-hidden="true"></i>
+                 </a>
+               </span>
+            </div>
+         </div>
+         <div class="container-fluid zip-quote image-wrapper">
+            <div class="text-box-left">
+               <h2>Random Quote Machine</h2>
+               <span class="buttons-wrapper">
+                 <a href="https://billdevcode.github.io/projects/random-quotes/index.html" target="_blank" class="buttons" role="button">
+                   See it live <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                 </a>
+                 <a href="https://github.com/billdevcode/billdevcode.github.io/tree/master/projects/random-quotes" target="_blank" class="buttons" role="button">
+                   See codes <i class="fa fa-code" aria-hidden="true"></i>
+                 </a>
+               </span>
+            </div>
+         </div>
+         <div class="container-fluid zip-calculator image-wrapper">
+            <div class="text-box-right">
+               <h2>JavaScript Calculator</h2>
+               <span class="buttons-wrapper">
+                 <a href="https://billdevcode.github.io/projects/javascript-calculator/index.html" target="_blank" class="buttons" role="button">
+                   See it live <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                 </a>
+                 <a href="https://github.com/billdevcode/billdevcode.github.io/tree/master/projects/javascript-calculator" target="_blank" class="buttons" role="button">
+                   See codes <i class="fa fa-code" aria-hidden="true"></i>
+                 </a>
+               </span>
+            </div>
+         </div>
+         <div class="container-fluid zip-clock image-wrapper">
+            <div class="text-box-left">
+               <h2>Pomodoro Clock</h2>
+               <span class="buttons-wrapper">
+                 <a href="https://billdevcode.github.io/projects/pomodoro-clock/index.html" target="_blank" class="buttons" role="button">
+                   See it live <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                 </a>
+                 <a href="https://github.com/billdevcode/billdevcode.github.io/tree/master/projects/pomodoro-clock" target="_blank" class="buttons" role="button">
+                   See codes <i class="fa fa-code" aria-hidden="true"></i>
+                 </a>
+               </span>
+            </div>
+         </div>
+         <div class="container-fluid zip-twitch image-wrapper">
+            <div class="text-box-right">
+               <h2>Twitch.tv JSON API</h2>
+               <span class="buttons-wrapper">
+                 <a href="https://billdevcode.github.io/projects/twitchTV/index.html" target="_blank" class="buttons" role="button">
+                   See it live <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                 </a>
+                 <a href="https://github.com/billdevcode/billdevcode.github.io/tree/master/projects/twitchTV" target="_blank" class="buttons" role="button">
+                   See codes <i class="fa fa-code" aria-hidden="true"></i>
+                 </a>
+               </span>
+            </div>
+         </div>
+         <div class="container-fluid react-fcc-leaderboard image-wrapper">
+            <div class="text-box-left">
+               <h2>Camper Leaderboard</h2>
+               <span class="buttons-wrapper">
+                 <a href="https://billdevcode.github.io/projects/fcc-leaderboard/index.html" target="_blank" class="buttons" role="button">
+                   See it live <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                 </a>
+                 <a href="https://github.com/billdevcode/billdevcode.github.io/tree/master/projects/fcc-leaderboard" target="_blank" class="buttons" role="button">
+                   See codes <i class="fa fa-code" aria-hidden="true"></i>
+                 </a>
+               </span>
+            </div>
+         </div>
+         <div class="container-fluid zip-wiki image-wrapper">
+            <div class="text-box-right">
+               <h2>Wikipedia Viewer</h2>
+               <span class="buttons-wrapper">
+                 <a href="https://billdevcode.github.io/projects/wikipedia-viewer/index.html" target="_blank" class="buttons" role="button">
+                   See it live <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                 </a>
+                 <a href="https://github.com/billdevcode/billdevcode.github.io/tree/master/projects/wikipedia-viewer" target="_blank" class="buttons" role="button">
+                   See codes <i class="fa fa-code" aria-hidden="true"></i>
+                 </a>
+               </span>
+            </div>
+         </div>
+         <div class="container-fluid zip-tic-tac-toe image-wrapper">
+            <div class="text-box-left">
+               <h2>Tic-Tac-Toe Game</h2>
+               <span class="buttons-wrapper">
+                 <a href="https://billdevcode.github.io/projects/tic-tac-toe/index.html" target="_blank" class="buttons" role="button">
+                   See it live <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                 </a>
+                 <a href="https://github.com/billdevcode/billdevcode.github.io/tree/master/projects/tic-tac-toe" target="_blank" class="buttons" role="button">
+                   See codes <i class="fa fa-code" aria-hidden="true"></i>
+                 </a>
+               </span>
+            </div>
+         </div>
+         <div class="container-fluid zip-simon image-wrapper">
+            <div class="text-box-right">
+               <h2>Simon Game</h2>
+               <span class="buttons-wrapper">
+                 <a href="https://billdevcode.github.io/projects/simon-game/index.html" target="_blank" class="buttons" role="button">
+                   See it live <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                 </a>
+                 <a href="https://github.com/billdevcode/billdevcode.github.io/tree/master/projects/simon-game" target="_blank" class="buttons" role="button">
+                   See codes <i class="fa fa-code" aria-hidden="true"></i>
+                 </a>
+               </span>
+            </div>
+         </div>
       </div>
-
       <div id="contact" class="container-fluid">
-        <h3>Contact me: <a href="mailto:billdevcode@gmail.com"><i class="fa fa-envelope"></i> billdevcode@gmail.com</a></h3>
-        <a href="https://www.linkedin.com/in/billdevcode" target="_blank" alt="LinkedIn"><img src="imgs/linkedin-icon.png" width="50" height="50" class="img-circle"></a>
-        <a href="https://github.com/billdevcode" target="_blank" alt="Github"><img src="imgs/github-icon.png" width="50" height="50" class="img-circle"></a>
+         <h3>Contact me: <a href="mailto:billdevcode@gmail.com"><i class="fa fa-envelope"></i> billdevcode@gmail.com</a></h3>
+         <a href="https://www.linkedin.com/in/billdevcode" target="_blank" alt="LinkedIn"><img src="imgs/linkedin-icon.png" width="50" height="50" class="img-circle"></a>
+         <a href="https://github.com/billdevcode" target="_blank" alt="Github"><img src="imgs/github-icon.png" width="50" height="50" class="img-circle"></a>
       </div>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
       <script src="src/index.js"></script>
-    </body>
-
+   </body>
 </html>
