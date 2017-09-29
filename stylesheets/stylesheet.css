@@ -92,6 +92,8 @@ body {
   height: 50vh;
   background-size: cover;
   background-position: center;
+  border-top: 1px solid slategray;
+  border-bottom: 1px solid slategray;
 }
 
 .text-box-right,
@@ -140,6 +142,14 @@ body {
 
 .buttons:active {
   color: blue;
+}
+
+.github-followers {
+  background-image: url('https://raw.githubusercontent.com/billdevcode/github-followers/master/src/assets/github-followers-screenshot.png');
+}
+
+.hero-layout {
+  background-image: url('https://github.com/billdevcode/hero-layout/raw/master/src/HeroLayout/assets/images/hero-layout-screenshot.png?raw=true');
 }
 
 .maps-locations {
