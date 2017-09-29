@@ -75,9 +75,9 @@ body {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   cursor: pointer;
-  background-color: white;
-  color: black;
-  border: 1px solid #008CBA;
+  background-color: #00ACE4;
+  color: white;
+  border: none;
 }
 
 .search-button:hover {
@@ -92,7 +92,6 @@ body {
 
 #map {
   height: 100%;
-  transition: margin-left .5s;
 }
 
 .sidenav {
@@ -105,7 +104,6 @@ body {
   background-color: #111;
   overflow-x: hidden;
   padding-top: 60px;
-  transition: 0.5s;
 }
 
 .sidenav a,
@@ -131,4 +129,12 @@ li:hover {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+.mapMarker * {
+  margin: 0;
+}
+
+.results-list li p {
+  margin: 0;
 }
